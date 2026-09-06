@@ -6,7 +6,7 @@
 
 ## 1. Yeu Cau He Thong (System Requirements)
 - **He dieu hanh:** Windows 10 / Windows 11 (64-bit).
-- **PHAN CUNG BAT BUOC (MANDATORY REQUIREMENT):** Phai co thiet bi phan cung **Hugo Device** (ket noi qua cong USB may tinh). He thong dieu khien chuot an toan o tang Hardware, bat buoc phai co thiet bi Hugo Device moi co the su dung ung dung.
+- **PHAN CUNG BAT BUOC (MANDATORY REQUIREMENT):** Phai co thiet bi phan cung **Hugo Device** (ket noi qua cong USB may tinh). Bat buoc phai co thiet bi Hugo Device moi co the su dung ung dung.
 
 ---
 
