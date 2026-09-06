@@ -1,7 +1,15 @@
 # Hugo AI Suite - Nhat Ky Cap Nhat (Update History)
 > **DEV by Hugo (telegram: @Hugo997911)**
 
-## [v6.3.24] - 2026-09-06
+## [v6.3.28] - 2026-09-06
+### 1. Kich Hoat Ban Quyen Online Qua Cloudflare Worker & Chu Ky So RSA-2048
+  - Nang cap he thong xac thuc ban quyen: loai bo hoan toan khoa MASTER_KEY tinh khoi Client de tang cuong bao mat.
+  - Xac thuc va ky so session token qua may chu serverless Cloudflare Workers su dung RSA-2048.
+  - Client xac thuc chu ky so RSA doc lap khong can goi them thu vien ngoai (Zero Dependency).
+### 2. Bat Buoc Co Ket Noi Internet Khi Kich Hoat Key (Cam Kich Hoat Khi Mat Mang)
+  - Nguoi dung yeu cau: Khong cho phep kich hoat ban quyen khi mat mang / offline.
+  - Khi nhap ma kich hoat moi (`HGMC-...` hoac `HGAI-...`), bat buoc Client phai co ket noi Internet de may chu Cloudflare Worker kiem tra va ky so.
+---
 ### 1. Ẩn/Hiện Động Dòng Hướng Dẫn Tùy Chỉnh Lực (Custom Recoil Hint Visibility)
   - Dòng chữ vàng `💡 Ingame: Mũi tên ↑ / ↓ để chỉnh lực (khi bật Custom)` trên thẻ `CLOUD PROFILE` trước đây luôn hiển thị mặc định, ngay cả khi người dùng đang dùng Master Cloud Profile và chưa từng chỉnh lực súng.
   - Người dùng yêu cầu dòng chữ này chỉ được phép hiển thị khi người dùng đang bật Custom Recoil hoặc đã có tùy chỉnh lực trong file `weapons_custom.json`.
