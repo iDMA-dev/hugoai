@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.24 - Huong Dan Su Dung & Cai Dat
+# Hugo AI Suite v6.3.27 - Huong Dan Su Dung & Cai Dat
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM & Hỗ trợ ghìm tâm PUBG
 
@@ -21,7 +21,7 @@
 ---
 
 ## 3. Cach Kich Hoat Ban Quyen (License Activation)
-- Sau khi nhan file ban quyen `*.lic` tu Admin (qua Telegram: **@Hugo997911**), hay chep truc tiep file `.lic` nay vao **cung thu muc** voi file `hugoai_6.3.24.exe`.
+- Sau khi nhan file ban quyen `*.lic` tu Admin (qua Telegram: **@Hugo997911**), hay chep truc tiep file `.lic` nay vao **cung thu muc** voi file `hugoai_6.3.27.exe`.
 - Khi khoi chay, ung dung se tu dong nhan dien ban quyen va cap nhat thoi han su dung.
 
 ---
@@ -54,7 +54,7 @@
 ---
 
 ## 5. Huong Dan Khoi Chay & Cai Dat Game (Launch & Game Settings)
-1. **Quyen quan tri (Administrator):** Luon click chuot phai vao file `hugoai_6.3.24.exe` va chon **Run as Administrator**.
+1. **Quyen quan tri (Administrator):** Luon click chuot phai vao file `hugoai_6.3.27.exe` va chon **Run as Administrator**.
 2. **Che do man hinh trong PUBG:**
    - Cai dat game o che do **Borderless (Khong vien)** hoac **Windowed (Cua so)**.
    - *Luu y quan trong:* Tuyet doi khong dung che do Fullscreen doc quyen vi AI Vision can chup man hinh de nhan dien vu khi.
