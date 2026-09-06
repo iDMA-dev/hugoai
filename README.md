@@ -32,13 +32,13 @@
 
 | Tinh Nang (Feature) | Mo Ta Chi Tiet (Description) |
 | :--- | :--- |
-| **AI Aim Alignment** | Tu dong nhan dien va bam muc tieu thoi gian thuc bang AI Vision (YOLO) toc do cao |
+| **AI Aim Alignment** | Tu dong nhan dien va bam muc tieu thoi gian thuc bang AI (GPU/CPU) toc do cao |
 | **Auto Recoil Engine** | Tu dong nhan dien sung, ong ngam, phu kien de ghim tam chuan xac tuyet doi |
 | **Smart Auto Loot** | Tu dong quet va nhat nhanh trang bi, dan duoc, phu kien sieu toc qua Vision AI |
 | **Prone Macro (Drop Shot)** | Ho tro macro tu dong nam ban linh hoat trong cac pha giao tranh |
 | **In-Game HUD Overlay** | Hien thi truc quan thong tin sung, phu kien va trang thai ngay tren man hinh game |
 | **Cloud Profile Sync** | Tu dong dong bo thong so ghim tam toi uu lien tuc tu he thong Cloud |
-| **Hardware Isolation (100% Safe)** | Dieu khien chuot hoan toan qua Hugo Device phan cung (0% can thiep bo nho game, khong lo bi khoa acc) |
+| **Hardware Isolation (100% Safe)** | Hoan toan qua Hugo Device phan cung (0% can thiep bo nho game, khong lo bi khoa acc) |
 
 ### Danh Sach Cac Loai Sung Ho Tro (Supported Weapons)
 
