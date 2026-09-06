@@ -16,9 +16,12 @@
 
 ---
 
-## 3. Ket Noi Thiet Bi Phan Cung USB COM (Hardware Connection)
-- Neu su dung phan cung chong giat (Arduino Leonardo, CH340, ATmega32U4 hoac USB COM Dongle):
-  - Cam thiet bi vao cong USB may tinh truoc khi khoi dong ung dung.
+## 3. Thiet Bi Phan Cung (Hugo Device)
+- **Lien he (Support) de mua Hugo Device:**
+  - Chi phi tu 499 ca den 2.999 ca (da bao gom ban quyen).
+  - Telegram Support: [@Hugo997911](https://t.me/Hugo997911)
+- **Huong dan ket noi thiet bi:**
+  - Cam thiet bi Hugo Device vao cong USB may tinh truoc khi khoi dong ung dung.
   - He thong se tu dong quet va ket noi cong COM tuong thich (Auto COM Detection).
 
 ---
