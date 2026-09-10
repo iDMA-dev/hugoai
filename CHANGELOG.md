@@ -1,6 +1,12 @@
 # Hugo AI Suite - Nhat Ky Cap Nhat (Update History)
 > **DEV by Hugo (telegram: @Hugo997911)**
 
+## [v6.3.34] - 2026-09-11
+### 1. Bao Luu Toan Dien Cau Hinh Khi Nang Cap Version (Comprehensive User Config Persistence)
+  - Khi nang cap len version moi, cac thong so can chinh sung tuy chinh (`weapons_custom.json`), phim tat (`hugo_hotkeys.json`) va cac cau hinh AIM bi reset ve mac dinh trang.
+### 2. Dong Bo Giao Dien AIM Menu Thoi Gian Thuc (Real-Time AIM UI Sync)
+  - Cac nut phan gan phim (`AKeyChanger`), bang mau (`AColorChanger`) va danh sach dropdown tren giao dien AIM khong cap nhat theo profile da luu.
+---
 ## [v6.3.33] - 2026-09-10
 ### 1. Luu Toa Do Recoil HUD Khi Di Chuyen Va Dong/Mo Ung Dung
   - Nguoi dung di chuyen HUD Recoil toi vi tri mong muon tren man hinh, bam nut Khoa HUD roi thoat ung dung.
@@ -16,15 +22,3 @@
   - Khong de lo link raw GitHub / Gist / Webhook ben trong ma nguon va file thuc thi client.
   - Ho tro chuyen repository thanh Private ma khong lam gian doan qua trinh tai Model AI, Config hay Templates.
 ---
-## [v6.3.28] - 2026-09-06
-### 1. Kich Hoat Ban Quyen Online Qua Hugo AI Worker & Chu Ky So RSA-2048
-  - Nang cap he thong xac thuc ban quyen: loai bo hoan toan khoa MASTER_KEY tinh khoi Client de tang cuong bao mat.
-  - Xac thuc va ky so session token qua may chu serverless Hugo AI Worker su dung RSA-2048.
-  - Client xac thuc chu ky so RSA doc lap khong can goi them thu vien ngoai (Zero Dependency).
-### 2. Bat Buoc Co Ket Noi Internet Khi Kich Hoat Key (Cam Kich Hoat Khi Mat Mang)
-  - Nguoi dung yeu cau: Khong cho phep kich hoat ban quyen khi mat mang / offline.
-  - Khi nhap ma kich hoat moi (`HGMC-...` hoac `HGAI-...`), bat buoc Client phai co ket noi Internet de may chu Hugo AI Worker kiem tra va ky so.
----
-### 1. Ẩn/Hiện Động Dòng Hướng Dẫn Tùy Chỉnh Lực (Custom Recoil Hint Visibility)
-  - Dòng chữ vàng `💡 Ingame: Mũi tên ↑ / ↓ để chỉnh lực (khi bật Custom)` trên thẻ `CLOUD PROFILE` trước đây luôn hiển thị mặc định, ngay cả khi người dùng đang dùng Master Cloud Profile và chưa từng chỉnh lực súng.
-  - Người dùng yêu cầu dòng chữ này chỉ được phép hiển thị khi người dùng đang bật Custom Recoil hoặc đã có tùy chỉnh lực trong file `weapons_custom.json`.
