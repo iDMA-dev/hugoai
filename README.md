@@ -62,7 +62,32 @@
 
 ---
 
-## 6. Ho Tro & Lien He (Support)
+## 6. Toi Uu Hieu Nang Do Hoa & Do Tre (NVIDIA & Windows Optimization)
+De dat toc do nhan dien AI nhanh nhat, giam thieu do tre khung hinh (Ultra Low Latency) va ghim tam muot nhat:
+
+### A. Cai Dat NVIDIA Control Panel
+1. Mo **NVIDIA Control Panel** -> Vao muc **Manage 3D Settings**.
+2. Chon tab **Global Settings** (hoac Program Settings -> chon game PUBG `TslGame.exe` va `HugoAI`):
+   - **Low Latency Mode:** Chon **Ultra** (hoac **On**) giup ha thap render queue ve 0-1 frame, chup man hinh tuc thi khong tre anh.
+   - **Power Management Mode:** Chon **Prefer maximum performance** de GPU luon duy tri xung nhip cao nhat cho AI.
+   - **Threaded Optimization:** Chon **On**.
+   - **Vertical Sync (V-Sync):** Chon **Off** (tat ca trong Nvidia Panel va trong game).
+   - **Max Frame Rate:** Neu man hinh 144Hz/240Hz, nen khoa FPS game o muc `Tan so quet - 3` (vi du 141 hoac 237 FPS) de tranh GPU bi nghen 100%, giu lai ~10% GPU cho AI Vision.
+
+### B. Cai Dat NVIDIA App & In-Game Reflex
+1. Trong cai dat PUBG: Vao **Settings -> Graphics -> NVIDIA Reflex** chon **Enabled + Boost**.
+2. Trong **NVIDIA App / GeForce Experience**: **NEN TAT Game Filters** (bo loc mau overlay) vi bo loc mau co the lam sai lech pixel nhan dien phu kien, giam FPS capture.
+
+### C. Cai Dat Windows Graphics (Hardware-Accelerated GPU Scheduling - HAGS)
+1. Nhan phim `Windows + S` -> Tim kiem **Graphics Settings (Cai dat do hoa)**.
+2. Bat **Hardware-accelerated GPU scheduling (HAGS)** -> **On** (khoi dong lai may neu moi bat lan dau).
+3. Muc *Custom options for apps*:
+   - Bam **Browse** -> Chon file `hugoai_6.3.50.exe`.
+   - Bam **Options** -> Chon **High Performance** (chi dinh card roi NVIDIA).
+
+---
+
+## 7. Ho Tro & Lien He (Support)
 - **Developer:** Hugo
 - **Telegram Support:** [@Hugo997911](https://t.me/Hugo997911)
 - **Copyright:** DEV by Hugo (telegram: @Hugo997911)

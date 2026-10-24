@@ -31,6 +31,16 @@
    - Trong PUBG: Chon che do man hinh 'Borderless' hoac 'Windowed' (khong dung Fullscreen).
    - Do phan giai ho tro: 1920x1080 (Full HD) va 2560x1440 (2K).
 
+6. TOI UU NVIDIA & WINDOWS DE DAT HIEU NANG CAO NHAT (LOW LATENCY):
+   - NVIDIA Control Panel -> Manage 3D Settings:
+     + Low Latency Mode: Ultra (hoac On).
+     + Power management mode: Prefer maximum performance.
+     + Threaded optimization: On.
+     + V-Sync: Off.
+   - PUBG Graphics: Bat NVIDIA Reflex = Enabled + Boost.
+   - Tat Game Filters trong NVIDIA App / GeForce Experience de tranh sai lech mau nhan dien.
+   - Windows Graphics Settings: Bat Hardware-accelerated GPU scheduling (HAGS) = On, va them hugoai_6.3.50.exe chon High performance.
+
 ================================================================================
  DEV by Hugo (telegram: @Hugo997911)
 ================================================================================
