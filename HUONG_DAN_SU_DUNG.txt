@@ -32,14 +32,17 @@
    - Do phan giai ho tro: 1920x1080 (Full HD) va 2560x1440 (2K).
 
 6. TOI UU NVIDIA & WINDOWS DE DAT HIEU NANG CAO NHAT (LOW LATENCY):
-   - NVIDIA Control Panel -> Manage 3D Settings:
-     + Low Latency Mode: Ultra (hoac On).
+   - CHO PUBG (TslGame.exe):
+     + Low Latency Mode: Ultra (Giam hang doi render, thay the cho NVIDIA Reflex).
      + Power management mode: Prefer maximum performance.
-     + Threaded optimization: On.
-     + V-Sync: Off.
-   - PUBG Graphics: Bat NVIDIA Reflex = Enabled + Boost.
-   - Tat Game Filters trong NVIDIA App / GeForce Experience de tranh sai lech mau nhan dien.
-   - Windows Graphics Settings: Bat Hardware-accelerated GPU scheduling (HAGS) = On, va them hugoai_6.3.50.exe chon High performance.
+     + Max Frame Rate: Khoa o muc 141 hoac 237 FPS (theo man 144Hz/240Hz) de tranh 100% full load.
+     + In-Game PUBG: DirectX Version = DirectX 11 (hoac DirectX 11 Enhanced), V-Sync = Off.
+   - CHO HUGO AI (hugoai_6.3.50.exe va worker):
+     + Power management mode: Prefer maximum performance.
+     + CUDA - GPUs: Chon card roi NVIDIA GeForce.
+     + Low Latency Mode: Ultra.
+     + Tat Game Filters trong NVIDIA App de tranh sai lech mau nhan dien.
+   - WINDOWS: Bat Hardware-accelerated GPU scheduling (HAGS) = On, va set Hugo AI thanh High Performance.
 
 ================================================================================
  DEV by Hugo (telegram: @Hugo997911)

@@ -63,20 +63,33 @@
 ---
 
 ## 6. Toi Uu Hieu Nang Do Hoa & Do Tre (NVIDIA & Windows Optimization)
-De dat toc do nhan dien AI nhanh nhat, giam thieu do tre khung hinh (Ultra Low Latency) va ghim tam muot nhat:
+De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien vu khi sieu toc, hay thiet lap rieng biet cho PUBG va Hugo AI theo huong dan sau:
 
-### A. Cai Dat NVIDIA Control Panel
-1. Mo **NVIDIA Control Panel** -> Vao muc **Manage 3D Settings**.
-2. Chon tab **Global Settings** (hoac Program Settings -> chon game PUBG `TslGame.exe` va `HugoAI`):
-   - **Low Latency Mode:** Chon **Ultra** (hoac **On**) giup ha thap render queue ve 0-1 frame, chup man hinh tuc thi khong tre anh.
-   - **Power Management Mode:** Chon **Prefer maximum performance** de GPU luon duy tri xung nhip cao nhat cho AI.
+### A. Thiet Lap Rieng Cho Game PUBG (`TslGame.exe`)
+*Muc tieu:* Giup PUBG dat FPS cao va on dinh, loai bo do tre chuot (Input Lag), khong de PUBG chiem dung 100% GPU gay nghen pipeline chup man hinh cua AI.
+
+1. Mo **NVIDIA Control Panel** -> Vao muc **Manage 3D Settings** -> Chon tab **Program Settings**.
+2. Bam nut **Add** -> Chon `TslGame.exe` (PUBG):
+   - **Low Latency Mode:** Chon **Ultra** (Giai phap thay the cho NVIDIA Reflex, tu dong ha thap render queue xuong 0-1 frame, triet tieu do tre render giua game va AI capture).
+   - **Power Management Mode:** Chon **Prefer maximum performance** (Giu xung nhip GPU luon o muc cao nhat khi giao tranh).
+   - **Max Frame Rate:** Neu man hinh 144Hz hoac 240Hz, nen khoa FPS game o muc `Tan so quet - 3` (vi du 141 hoac 237 FPS) de GPU khong bi qua tai 100% full load, giu lai bang thong cho Tensor/CUDA cores cua AI.
    - **Threaded Optimization:** Chon **On**.
-   - **Vertical Sync (V-Sync):** Chon **Off** (tat ca trong Nvidia Panel va trong game).
-   - **Max Frame Rate:** Neu man hinh 144Hz/240Hz, nen khoa FPS game o muc `Tan so quet - 3` (vi du 141 hoac 237 FPS) de tranh GPU bi nghen 100%, giu lai ~10% GPU cho AI Vision.
+   - **Vertical Sync (V-Sync):** Chon **Off** (tat ca trong Nvidia Panel va trong game PUBG).
+3. Trong cai dat game PUBG:
+   - **Graphics -> DirectX Version:** Chon **DirectX 11** hoac **DirectX 11 Enhanced** (on dinh va chup man hinh nhanh nhat, tranh dung DirectX 12).
+   - **Graphics -> V-Sync:** Chon **Disable (Tat)**.
 
-### B. Cai Dat NVIDIA App & In-Game Reflex
-1. Trong cai dat PUBG: Vao **Settings -> Graphics -> NVIDIA Reflex** chon **Enabled + Boost**.
-2. Trong **NVIDIA App / GeForce Experience**: **NEN TAT Game Filters** (bo loc mau overlay) vi bo loc mau co the lam sai lech pixel nhan dien phu kien, giam FPS capture.
+### B. Thiet Lap Rieng Cho Hugo AI (`hugoai_6.3.50.exe` & `hugo_recoil_worker.exe`)
+*Muc tieu:* Uu tien tien trinh AI suy luan (inference) tuc thi, phan hoi nhan dien sung, phu kien trong 1-2 ms.
+
+1. Trong **NVIDIA Control Panel** -> **Manage 3D Settings** -> Tab **Program Settings**:
+2. Bam nut **Add** -> Chon file `hugoai_6.3.50.exe` (va `hugo_recoil_worker.exe`):
+   - **Power Management Mode:** Chon **Prefer maximum performance** (Bat buoc, giup GPU cap xung ngay khi AI thuc hien suy luan).
+   - **CUDA - GPUs:** Chon chinh xac card roi NVIDIA GeForce (tranh bi Windows nhan dien sang iGPU Onboard).
+   - **Low Latency Mode:** Chon **Ultra** hoac **On**.
+   - **Max Frame Rate:** Chon **Off** (khong gioi han cho AI).
+3. Trong **NVIDIA App / GeForce Experience**:
+   - **NEN TAT Game Filters** (bo loc mau overlay) vi cac filter mau se lam sai lech pixel nhan dien phu kien va lam giam FPS capture cua Vision AI.
 
 ### C. Cai Dat Windows Graphics (Hardware-Accelerated GPU Scheduling - HAGS)
 1. Nhan phim `Windows + S` -> Tim kiem **Graphics Settings (Cai dat do hoa)**.
