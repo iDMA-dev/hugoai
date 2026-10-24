@@ -1,0 +1,36 @@
+================================================================================
+ HUGO AI SUITE v6.3.50 - HUONG DAN SU DUNG NHANH (QUICK START)
+ DEV by Hugo (telegram: @Hugo997911)
+================================================================================
+
+1. YEU CAU HE THONG:
+   - Windows 10 / Windows 11 (64-bit).
+   - PHAN CUNG BAT BUOC: Phai co thiet bi Hugo Device cam vao cong USB may tinh.
+
+2. THIET BI PHAN CUNG (HUGO DEVICE) - BAT BUOC:
+   - Lien he (Support) de mua Hugo Device (Chi phi 499 ca den 2.999 ca da bao gom ban quyen):
+     Telegram Support: @Hugo997911 (https://t.me/Hugo997911)
+   - Huong dan ket noi: Cam Hugo Device vao cong USB truoc khi mo app, he thong se tu dong nhan dien COM port.
+
+3. KICH HOAT BAN QUYEN:
+   - Copy file license (*.lic) vao CUNG THU MUC voi file hugoai_6.3.50.exe.
+   - Lien he Admin qua Telegram @Hugo997911 de lay ban quyen theo HWID may.
+
+4. TINH NANG NOI BAT & SUNG HO TRO:
+   - AI Aim Alignment: Tu dong nhan dien va bam muc tieu thoi gian thuc sieu toc.
+   - Auto Recoil Engine: Tu dong nhan dien sung va phu kien de ghim tam chuan xac.
+   - Ho tro toan bo cac dong sung PUBG: AR 5.56 (M416, AUG, SCAR, QBZ, G36C, K2),
+     AR 7.62 (Beryl, AKM, ACE32, Groza), SMG (UZI, MP5, Vector, P90, JS9, UMP...),
+     LMG/DMR (M249, DP28, MG3, FAMAS, M16, Mk47, RPD).
+   - Smart Auto Loot: Nhat do tu dong sieu toc qua Vision AI.
+   - Prone Macro: Macro ho tro tu dong nam ban linh hoat.
+   - Hardware Isolation: Dieu khien qua Hugo Device 100% an toan.
+
+5. HUONG DAN CHAY & THIET LAP GAME:
+   - Luon click chuot phai vao hugoai_6.3.50.exe chon 'Run as Administrator'.
+   - Trong PUBG: Chon che do man hinh 'Borderless' hoac 'Windowed' (khong dung Fullscreen).
+   - Do phan giai ho tro: 1920x1080 (Full HD) va 2560x1440 (2K).
+
+================================================================================
+ DEV by Hugo (telegram: @Hugo997911)
+================================================================================
