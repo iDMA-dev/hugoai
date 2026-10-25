@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.52 - Huong Dan Su Dung & Cai Dat
+# Hugo AI Suite v6.3.53 - Huong Dan Su Dung & Cai Dat
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM & Ho tro ghim tam PUBG
 
@@ -21,7 +21,7 @@
 ---
 
 ## 3. Cach Kich Hoat Ban Quyen (License Activation)
-- Sau khi nhan file ban quyen `*.lic` tu Admin (qua Telegram: **@Hugo997911**), hay chep truc tiep file `.lic` nay vao **cung thu muc** voi file `hugoai_6.3.52.exe`.
+- Sau khi nhan file ban quyen `*.lic` tu Admin (qua Telegram: **@Hugo997911**), hay chep truc tiep file `.lic` nay vao **cung thu muc** voi file `hugoai_6.3.53.exe`.
 - Khi khoi chay, ung dung se tu dong nhan dien ban quyen va cap nhat thoi han su dung.
 
 ---
@@ -54,7 +54,7 @@
 ---
 
 ## 5. Huong Dan Khoi Chay & Cai Dat Game (Launch & Game Settings)
-1. **Quyen quan tri (Administrator):** Luon click chuot phai vao file `hugoai_6.3.52.exe` va chon **Run as Administrator**.
+1. **Quyen quan tri (Administrator):** Luon click chuot phai vao file `hugoai_6.3.53.exe` va chon **Run as Administrator**.
 2. **Che do man hinh trong PUBG:**
    - Cai dat game o che do **Borderless (Khong vien)** hoac **Windowed (Cua so)**.
    - *Luu y quan trong:* Tuyet doi khong dung che do Fullscreen doc quyen vi AI Vision can chup man hinh de nhan dien vu khi.
@@ -79,11 +79,11 @@ De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien v
    - **Graphics -> DirectX Version:** Chon **DirectX 11** hoac **DirectX 11 Enhanced** (on dinh va chup man hinh nhanh nhat, tranh dung DirectX 12).
    - **Graphics -> V-Sync:** Chon **Disable (Tat)**.
 
-### B. Thiet Lap Rieng Cho Hugo AI (`hugoai_6.3.52.exe` & `hugo_recoil_worker.exe`)
+### B. Thiet Lap Rieng Cho Hugo AI (`hugoai_6.3.53.exe` & `hugo_recoil_worker.exe`)
 *Muc tieu:* Uu tien tien trinh AI suy luan (inference) tuc thi, phan hoi nhan dien sung, phu kien trong 1-2 ms.
 
 1. Trong **NVIDIA Control Panel** -> **Manage 3D Settings** -> Tab **Program Settings**:
-2. Bam nut **Add** -> Chon file `hugoai_6.3.52.exe` (va `hugo_recoil_worker.exe`):
+2. Bam nut **Add** -> Chon file `hugoai_6.3.53.exe` (va `hugo_recoil_worker.exe`):
    - **Power Management Mode:** Chon **Prefer maximum performance** (Bat buoc, giup GPU cap xung ngay khi AI thuc hien suy luan).
    - **CUDA - GPUs:** Chon chinh xac card roi NVIDIA GeForce (tranh bi Windows nhan dien sang iGPU Onboard).
    - **Low Latency Mode:** Chon **Ultra** hoac **On**.
@@ -95,7 +95,7 @@ De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien v
 1. Nhan phim `Windows + S` -> Tim kiem **Graphics Settings (Cai dat do hoa)**.
 2. Bat **Hardware-accelerated GPU scheduling (HAGS)** -> **On** (khoi dong lai may neu moi bat lan dau).
 3. Muc *Custom options for apps*:
-   - Bam **Browse** -> Chon file `hugoai_6.3.52.exe`.
+   - Bam **Browse** -> Chon file `hugoai_6.3.53.exe`.
    - Bam **Options** -> Chon **High Performance** (chi dinh card roi NVIDIA).
 
 ---
