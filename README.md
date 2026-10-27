@@ -1,16 +1,27 @@
-# Hugo AI Suite v6.3.65 - Huong Dan Su Dung & Cai Dat
+# Hugo AI Suite v6.3.65 - Huong Dan Su Dung & Cai Dat Toan Dien
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
-> **Chuyen muc:** AI AIM & Ho tro ghim tam PUBG
+> **Chuyen muc:** AI AIM, Auto Recoil & Ho tro PUBG Chuyen Nghiep
 
 ---
 
 ## 1. Yeu Cau He Thong (System Requirements)
 - **He dieu hanh:** Windows 10 / Windows 11 (64-bit).
-- **PHAN CUNG BAT BUOC (MANDATORY REQUIREMENT):** Phai co thiet bi phan cung **Hugo Device** (ket noi qua cong USB may tinh). Bat buoc phai co thiet bi Hugo Device moi co the su dung ung dung.
+- **Yeu cau cai dat:** Zero Dependency (Ung dung da dong goi san .NET 8 runtime va cac thu vien AI, khong can cai them moi truong).
+- **PHAN CUNG BAT BUOC (MANDATORY REQUIREMENT):** Bat buoc phai co thiet bi phan cung **Hugo Device** (ket noi qua cong USB may tinh) de dieu khien chuot phan cung 100% cach ly, 0% can thiep bo nho game.
 
 ---
 
-## 2. Thiet Bi Phan Cung (Hugo Device) - BAT BUOC
+## 2. Buoc Khoi Dau Quan Trong - Cai Dat Chung Chi & Bo Qua Defender
+De tranh Windows Defender bao dong nham hoac chan file chay:
+1. Click chuot phai vao file **`Cho_Phep_Chay_HugoAI.bat`** va chon **Run as Administrator**.
+2. Script se tu dong:
+   - Cai dat Chung chi so tin cay (Authenticode Root Certificate) vao may.
+   - Tu dong them thu muc HugoAI vao danh sach loai tru (Folder Exclusion) cua Windows Defender.
+   - Neu Windows 11 dang bat Tamper Protection, script se tu dong copy duong dan vao Clipboard va mo trang cai dat Windows Security de ban paste them trong 1 click.
+
+---
+
+## 3. Thiet Bi Phan Cung (Hugo Device) - BAT BUOC
 - **Lien he (Support) de mua Hugo Device:**
   - Chi phi tu 499 ca den 2.999 ca (da bao gom ban quyen su dung).
   - Telegram Support: [@Hugo997911](https://t.me/Hugo997911)
@@ -20,13 +31,35 @@
 
 ---
 
-## 3. Cach Kich Hoat Ban Quyen (License Activation)
-- Sau khi nhan file ban quyen `*.lic` tu Admin (qua Telegram: **@Hugo997911**), hay chep truc tiep file `.lic` nay vao **cung thu muc** voi file `HugoAI.exe`.
-- Khi khoi chay, ung dung se tu dong nhan dien ban quyen va cap nhat thoi han su dung.
+## 4. Cach Kich Hoat Ban Quyen (License Activation)
+Hugo AI ho tro 2 hinh thuc kich hoat tien loi:
+- **Cach 1 (Khuyen dung - Online Key):**
+  - Mo ung dung `HugoAI.exe`, chuyen den the **License**.
+  - Nhap ma kich hoat Online Key nhan tu Admin (@Hugo997911) va bam **Kich hoat Online**.
+  - He thong se tu dong xac thuc RSA qua Cloud, cap nhat thoi han va tu dong cong don ngay su dung.
+- **Cach 2 (Offline License):**
+  - Chep truc tiep file ban quyen `*.lic` nhan tu Admin vao **cung thu muc** voi file `HugoAI.exe`.
+  - Khi khoi chay, ung dung se tu dong nhan dien va kich hoat offline ngay lap tuc.
 
 ---
 
-## 4. Tinh Nang Noi Bat & Danh Sach Vu Khi Ho Tro
+## 5. Bang Phim Tat Mac Dinh Trong Game (Default In-Game Hotkeys)
+
+| Phim Tat (Hotkey) | Chuc Nang (Function) |
+| :--- | :--- |
+| **F1** | Bat / Tat Auto Recoil (Ghim tam tu dong) |
+| **F2** | Chuyen doi sung nhanh / Bat tat Recoil phu |
+| **F3** | Bat / Tat Smart Auto Loot (Nhat do tu dong qua Vision AI) |
+| **F4** | Bat / Tat Prone Macro (Tu dong nam ban - Drop Shot khi say) |
+| **Mui ten Len (Up)** | Tang luc giat doc (Recoil Vertical +) truc tiep trong tran dau |
+| **Mui ten Xuong (Down)** | Giam luc giat doc (Recoil Vertical -) truc tiep trong tran dau |
+| **Mui ten Trai / Phai** | Bu tru do giat ngang (Horizontal Recoil Bias Left/Right) |
+| **F11** | Bat / Tat giao dien In-Game HUD Overlay |
+| **Shift + Esc** | Thoat nhanh khan cap va dong toan bo tien trinh ngam (Panic Exit) |
+
+---
+
+## 6. Tinh Nang Noi Bat & Danh Sach Vu Khi Ho Tro
 
 ### Bang Tinh Nang Noi Bat (Key Features)
 
@@ -38,6 +71,8 @@
 | **Prone Macro (Drop Shot)** | Ho tro macro tu dong nam ban linh hoat trong cac pha giao tranh |
 | **In-Game HUD Overlay** | Hien thi truc quan thong tin sung, phu kien va trang thai ngay tren man hinh game |
 | **Cloud Profile Sync** | Tu dong dong bo thong so ghim tam toi uu lien tuc tu he thong Cloud |
+| **Process Stealth Cloaking** | Engine chay ngam mang ten HugoCore.exe, an danh 100% truoc Task Manager va Anti-Cheat |
+| **Multi-Worker Cloud Failover** | Ha tang xac thuc 4 lop voi Cloudflare Workers va 2 Custom Domains rieng biet |
 | **Hardware Isolation (100% Safe)** | Hoan toan qua Hugo Device phan cung (0% can thiep bo nho game, khong lo bi khoa acc) |
 
 ### Danh Sach Cac Loai Sung Ho Tro (Supported Weapons)
@@ -53,7 +88,16 @@
 
 ---
 
-## 5. Huong Dan Khoi Chay & Cai Dat Game (Launch & Game Settings)
+## 7. Ha Tang Cloud 4 Lop Tu Dong Chuyen Vung (Multi-Worker Failover)
+He thong xac thuc Hugo AI tich hop co che failover da tang, tu dong chuyen server trong 0.5s neu 1 duong truyen bi loi:
+1. **Server 1 (Primary):** `https://hugo-ai-pubg-auth.team-idma-dev.workers.dev`
+2. **Server 2 (Custom Domain 1):** `https://hugoai.idma.dev` (Khong bao gio bi chan boi nha mang VN)
+3. **Server 3 (Backup Account):** `https://hugo-ai-pubg-auth-backup.gafaba.workers.dev`
+4. **Server 4 (Custom Domain 2):** `https://hugoai.gafaba.com` (Du phong da ten mien TLD)
+
+---
+
+## 8. Huong Dan Khoi Chay & Cai Dat Game (Launch & Game Settings)
 1. **Quyen quan tri (Administrator):** Luon click chuot phai vao file `HugoAI.exe` va chon **Run as Administrator**.
 2. **Che do man hinh trong PUBG:**
    - Cai dat game o che do **Borderless (Khong vien)** hoac **Windowed (Cua so)**.
@@ -62,7 +106,7 @@
 
 ---
 
-## 6. Toi Uu Hieu Nang Do Hoa & Do Tre (NVIDIA & Windows Optimization)
+## 9. Toi Uu Hieu Nang Do Hoa & Do Tre (NVIDIA & Windows Optimization)
 De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien vu khi sieu toc, hay thiet lap rieng biet cho PUBG va Hugo AI theo huong dan sau:
 
 ### A. Thiet Lap Rieng Cho Game PUBG (`TslGame.exe`)
@@ -80,7 +124,7 @@ De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien v
    - **Graphics -> V-Sync:** Chon **Disable (Tat)**.
 
 ### B. Thiet Lap Rieng Cho Hugo AI (`HugoAI.exe` & `HugoCore.exe`)
-*Muc tieu:* Uu tien tien trinh AI suy luan (inference) tuc thi, phan hoi nhan dien sung, phu kien trong 1-2 ms.
+*Muc tieu:* Uu tien tien trinh AI suy luan (inference) tuc thi, phan hoi nhan dien sung, phu kien trong 1-2 ms. Ten file da duoc chuan hoa co dinh, chi can add 1 lan duy nhat.
 
 1. Trong **NVIDIA Control Panel** -> **Manage 3D Settings** -> Tab **Program Settings**:
 2. Bam nut **Add** -> Chon file `HugoAI.exe` (va `HugoCore.exe`):
@@ -100,7 +144,7 @@ De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien v
 
 ---
 
-## 7. Ho Tro & Lien He (Support)
+## 10. Ho Tro & Lien He (Support)
 - **Developer:** Hugo
 - **Telegram Support:** [@Hugo997911](https://t.me/Hugo997911)
 - **Copyright:** DEV by Hugo (telegram: @Hugo997911)
