@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.66 - Huong Dan Su Dung & Cai Dat Toan Dien
+# Hugo AI Suite v6.3.67 - Huong Dan Su Dung & Cai Dat Toan Dien
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM, Auto Recoil & Ho tro PUBG Chuyen Nghiep
 
