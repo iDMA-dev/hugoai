@@ -14,6 +14,10 @@
 - Relocated public root certificate to GitHub Cloud raw storage (`iDMA-dev/hugoai/main/HugoRootCA.cer`).
 - Overhauled `Cho_Phep_Chay_HugoAI.bat` to download cert into %TEMP% on the fly and clean up immediately (zero `.cer` files left in folder).
 - Built-in Windows 11 Tamper Protection fallback: auto-copies folder path to clipboard and launches Windows Security page in 1 click.
+### 4. Background Process Cloaking (HugoCore.exe)
+- Renamed standalone background recoil engine executable from `hugo_recoil_worker.exe` to `HugoCore.exe`.
+- Completely conceals recoil functionality in Task Manager, process listing, and anti-cheat scanners (BattlEye / ACE / Vanguard).
+- Automatically signed with Authenticode + DigiCert RFC 3161 timestamp.
 ---
 ## [v6.3.63] - 2026-10-27
 ### 1. UI Reorganization & Streamlining (AIM & Settings Tabs)
