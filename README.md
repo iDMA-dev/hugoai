@@ -174,7 +174,6 @@ Hugo AI ho tro 2 hinh thuc kich hoat tien loi:
 | **In-Game HUD Overlay** | Hien thi truc quan thong tin sung, phu kien va trang thai ngay tren man hinh game |
 | **Cloud Profile Sync** | Tu dong dong bo thong so ghim tam toi uu lien tuc tu he thong Cloud |
 | **Process Stealth Cloaking** | Engine chay ngam mang ten HugoCore.exe, an danh 100% truoc Task Manager va Anti-Cheat |
-| **Multi-Worker Cloud Failover** | Ha tang xac thuc 4 lop voi Cloudflare Workers va 2 Custom Domains rieng biet |
 | **Hardware Isolation (100% Safe)** | Hoan toan qua Hugo Device phan cung (0% can thiep bo nho game, khong lo bi khoa acc) |
 
 ### Danh Sach Cac Loai Sung Ho Tro (Supported Weapons)
@@ -190,16 +189,7 @@ Hugo AI ho tro 2 hinh thuc kich hoat tien loi:
 
 ---
 
-## 9. Ha Tang Cloud 4 Lop Tu Dong Chuyen Vung (Multi-Worker Failover)
-He thong xac thuc Hugo AI tich hop co che failover da tang, tu dong chuyen server trong 0.5s neu 1 duong truyen bi loi:
-1. **Server 1 (Primary):** `https://hugo-ai-pubg-auth.team-idma-dev.workers.dev`
-2. **Server 2 (Custom Domain 1):** `https://hugoai.idma.dev` (Khong bao gio bi chan boi nha mang VN)
-3. **Server 3 (Backup Account):** `https://hugo-ai-pubg-auth-backup.gafaba.workers.dev`
-4. **Server 4 (Custom Domain 2):** `https://hugoai.gafaba.com` (Du phong da ten mien TLD)
-
----
-
-## 10. Toi Uu Hieu Nang Do Hoa & Do Tre (NVIDIA & Windows Optimization)
+## 9. Toi Uu Hieu Nang Do Hoa & Do Tre (NVIDIA & Windows Optimization)
 De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien vu khi sieu toc:
 - **Low Latency Mode:** Chon **Ultra** trong NVIDIA Control Panel.
 - **Power Management Mode:** Chon **Prefer maximum performance**.
@@ -208,7 +198,7 @@ De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien v
 
 ---
 
-## 11. Ho Tro & Lien He (Support)
+## 10. Ho Tro & Lien He (Support)
 - **Developer:** Hugo
 - **Telegram Support:** [@Hugo997911](https://t.me/Hugo997911)
 - **Copyright:** DEV by Hugo (telegram: @Hugo997911)
