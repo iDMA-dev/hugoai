@@ -11,11 +11,10 @@
 
 ---
 
-## 2. Buoc Khoi Dau Quan Trong - Cai Dat Chung Chi & Bo Qua Defender
+## 2. Buoc Khoi Dau Quan Trong - Bo Qua Windows Defender
 De tranh Windows Defender bao dong nham hoac chan file chay:
 1. Click chuot phai vao file **`Cho_Phep_Chay_HugoAI.bat`** va chon **Run as Administrator**.
 2. Script se tu dong:
-   - Cai dat Chung chi so tin cay (Authenticode Root Certificate) vao may.
    - Tu dong them thu muc HugoAI vao danh sach loai tru (Folder Exclusion) cua Windows Defender.
    - Neu Windows 11 dang bat Tamper Protection, script se tu dong copy duong dan vao Clipboard va mo trang cai dat Windows Security de ban paste them trong 1 click.
 
