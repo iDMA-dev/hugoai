@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.63 - Huong Dan Su Dung & Cai Dat
+# Hugo AI Suite v6.3.64 - Huong Dan Su Dung & Cai Dat
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM & Ho tro ghim tam PUBG
 
