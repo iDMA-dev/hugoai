@@ -1,17 +1,116 @@
-# Hugo AI Suite v6.3.67 - Huong Dan Su Dung & Cai Dat Toan Dien
+# Hugo AI Suite v6.3.70 - Huong Dan Su Dung & Cai Dat Toan Dien
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM, Auto Recoil & Ho tro PUBG Chuyen Nghiep
 
 ---
 
-## 1. Yeu Cau He Thong (System Requirements)
+## 1. Yeu Cau He Thong & Luu Y Quan Trong (System Requirements & Important Note)
 - **He dieu hanh:** Windows 10 / Windows 11 (64-bit).
 - **Yeu cau cai dat:** Zero Dependency (Ung dung da dong goi san .NET 8 runtime va cac thu vien AI, khong can cai them moi truong).
-- **PHAN CUNG BAT BUOC (MANDATORY REQUIREMENT):** Bat buoc phai co thiet bi phan cung **Hugo Device** (ket noi qua cong USB may tinh) de dieu khien chuot phan cung 100% cach ly, 0% can thiep bo nho game.
+- **PHAN CUNG BAT BUOC (MANDATORY REQUIREMENT):** Bat buoc phai co thiet bi phan cung **Hugo Device** (ket noi qua cong USB may tinh) de dieu khien chuot phan cung 100% cach ly, 0% can thiep bo nho game, khong lo bi phat hien.
+- **LUU Y QUAN TRONG VE NGON NGU IN-GAME:**
+  > **Hugo AI Suite hoat dong tot nhat va chinh xac nhat o ngon ngu TIENG ANH (ENGLISH) trong cai dat game PUBG.**
+  > Vui long vao `Settings -> Gameplay -> Language -> Language Selection -> English` de AI Vision nhan dien 100% ten sung, phu kien va thong so vat pham.
 
 ---
 
-## 2. Buoc Khoi Dau Quan Trong - Bo Qua Windows Defender
+## 2. Cai Dat In-Game PUBG Chuan Xac (PUBG In-Game Mouse Settings - BAT BUOC)
+De he thong Recoil va AI Aim hoat dong voi quy dao ghim tam chuan xac tuyet doi, ban can thiet lap cac thong so chuot trong game PUBG chinh xac nhu sau:
+
+| Thiet Lap In-Game (Setting) | Gia Tri Chuan (Value) | Y Nghia / Ghi Chu (Description) |
+| :--- | :--- | :--- |
+| **Invert Mouse** | **Disable** | Tat dao nguoc chuot |
+| **General Sensitivity** | **30** | Do nhay chuot tong the trong game |
+| **Vertical Sensitivity Multiplier** | **1** (hoac 1.0) | Ty le nhay doc / ngang chuan |
+| **Aim Sensitivity** | **30** | Do nhay ngam qua vai (Aim) |
+| **ADS Sensitivity** | **30** | **Cuc ky quan trong**: Do nhay ngam ban dau ruoi / scope |
+| **Universal Sensitivity for All Scopes** | **Enable** | Bat ap dung chung cho tat ca cac loai Scope |
+| **Scoping Sensitivity** | **30** | Do nhay ong ngam |
+| **Display Mode (Che do man hinh)** | **Borderless** / **Windowed** | **Khong dung Fullscreen doc quyen** |
+
+---
+
+## 3. Huong Dan Chi Tiet Cac Thong So Cai Dat (Settings Detailed Guide)
+
+### A. Cac Thong So Trong Hugo Recoil (Ghim Tam Tu Dong)
+1. **Toggle Recoil (ALT + F12):**
+   - Bat hoac tat toan bo he thong ghim tam Recoil. Khi tat, HUD se bao `RECOIL: PAUSED` va khong can thiep chuot.
+2. **Recoil Multiplier (Do nhay / Luc ghim tam):**
+   - He so nhan luc ghim tong the (Mac dinh: `1.00`).
+   - Co the dieu chinh truc tiep trong tran bang 2 phim **Mui ten Len (Up)** va **Mui ten Xuong (Down)** (khi bat Custom Recoil).
+   - **So lon hon (> 1.0, vi du 1.05 - 1.20):** Luc ghim **MANH HON**, chuot bi keo xuong sau hon. *Chinh tang khi thay dan bi giat bay len tren dau muc tieu*.
+   - **So nho hon (< 1.0, vi du 0.85 - 0.95):** Luc ghim **NHE LAI**, chuot keo it hon. *Chinh giam khi thay tam sung bi ghim chui xuong dat*.
+3. **Custom Recoil:**
+   - Khi **ON**: Cho phep nguoi choi tuy chinh va luu luc ghim rieng biet cho tung khau sung vao may ca nhan.
+   - Khi **OFF**: Su dung 100% thong so chuan dong bo tu Master Cloud Profile.
+4. **Human Jitter (Mo phong rung tay nguoi):**
+   - Tu dong them cac dao dong vi mo ngau nhien vao quy dao ghim tam de chong cac he thong Anti-Cheat AI phat hien duong keo chuot hoan hao dang robot.
+5. **Smart Auto Loot (Phim Caps Lock):**
+   - Tu dong quet va nhat trang bi, dan duoc, phu kien sieu toc qua Vision AI.
+6. **Prone Macro - Drop Shot (Phim V):**
+   - Macro tu dong nam ban khi say (Mac dinh: **OFF** de nguoi dung chu dong bat khi can).
+
+---
+
+### B. Cac Thong So Trong Hugo AI (AI Aim Assist & Target Tracking)
+1. **FOV Size (10 - 640 pixel):**
+   - Ban kinh vung tron tim kiem muc tieu xung quanh tam man hinh.
+   - **So nho (100 - 200 px):** Vung quét hep, chi ho tro khi tam da o rat gan muc tieu. Thich hop ban kin dao (legit), khong bi lo khi stream/quay clip.
+   - **So lon (300 - 500 px):** Vung quet rong, giup bat va khoa muc tieu o xa tam ngam mot cach de dang.
+2. **Mouse Sensitivity (+/-) (0.01 - 1.00):**
+   - Toc do va cuong do keo chuot cua AI khi bam duoi muc tieu.
+   - **So nho (0.10 - 0.40):** Keo chuot nhe nhang, em ai, tao cam giac ngam ban hoan toan tu nhien.
+   - **So lon (0.70 - 0.90):** Keo chuot cuc nhanh, tam dinh chat vao muc tieu ngay khi xuat hien.
+3. **Sticky Aim Threshold (0 - 100 pixel):**
+   - Do dinh tam (nguong giu muc tieu). Khi tam da vao sat nguoi dich trong khoang cach nay, AI se tang cuong do bam giu de tam khong bi vang ra ngoai du dich co nhay hay doi huong.
+4. **Y Offset (Up/Down) (-150 den +150 pixel):**
+   - Diem ngam muc tieu theo chieu doc (Dau / Co / Nguc):
+   - **Keo thanh truot sang TRAI (Gia tri am, -):** Tam ngam duoc day **LEN CAO** (Uu tien Headshot / ban vao dau).
+   - **Keo thanh truot sang PHAI (Gia tri duong, +):** Tam ngam duoc keo **XUONG DUOI** (Nguc / Than tren, an toan va de trung dan).
+5. **X Offset (Left/Right) (-150 den +150 pixel):**
+   - Diem ngam muc tieu theo chieu ngang:
+   - **Keo sang TRAI (Gia tri am, -):** Tam ngam lech sang **BEN TRAI** muc tieu.
+   - **Keo sang PHAI (Gia tri duong, +):** Tam ngam lech sang **BEN PHAI** muc tieu.
+6. **Kalman Lead Time (0.02 - 0.50 giay):**
+   - Thuat toan du doan don dau huong di chuyen cua dich (Lead Tracking):
+   - **So lon (0.15 - 0.35s):** Ban don dau xa hon ve phia truoc khi muc tieu dang chay nhanh ngang man hinh hoac di chuyen bang phuong tien (xe co).
+   - **So nho (0.05 - 0.10s):** Ngam sat nguoi muc tieu, phu hop dich dang di bo cham hoac giao tranh tam gan.
+7. **EMA Smoothening (0.01 - 1.00):**
+   - Bo loc lam muot chuyen dong chuot (Exponential Moving Average):
+   - **So lon:** Chuyen dong chuot muot ma, em ai, triet tieu hien tuong rung lac tam man hinh.
+8. **Max AI FPS (60 - 165 FPS):**
+   - Toc do xu ly suy luan AI moi giay. Khuyen nghi cai dat phu hop voi tan so quet man hinh hoac kha nang cua GPU (Mac dinh: `60` - `120`).
+9. **AI Minimum Confidence (1 - 100%):**
+   - Do tin cay toi thieu de AI xac nhan do la nguoi choi dich:
+   - **So lon (50% - 70%):** Chi ngam khi nhin thay ro rang nguoi dich, tranh tuyet doi viec nhan nham goc cay, tang da.
+   - **So nho (35% - 45%):** Nhan dien nhay hon khi dich nup sau bui co hoac o khoang cach cuc xa.
+
+---
+
+## 4. Bang Phim Tat Mac Dinh Trong Game (Default In-Game Hotkeys)
+
+| Phim Tat (Hotkey) | Chuc Nang (Function) |
+| :--- | :--- |
+| **ALT + F12** | Bat / Tat Auto Recoil (Ghim tam tu dong) |
+| **F1** | Chuyen Che Do Recoil (AUTO / MANUAL / S-ONLY / LOCKED) |
+| **F2** | Chuyen doi Scope thu cong |
+| **F3** | Chuyen doi Tay cam (Grip) thu cong |
+| **F4** | Chuyen doi Dau nong (Muzzle) thu cong |
+| **F5** | Quet balo thu cong (Force Full Scan) |
+| **Tab** | Tu dong quet nhan dien sung va phu kien khi mo balo |
+| **Caps Lock** | Bat / Tat Smart Auto Loot (Nhat do tu dong qua Vision AI) |
+| **V** | Prone Macro (Tu dong nam ban - Drop Shot khi say, mac dinh: OFF) |
+| **Mui ten Len (Up)** | Tang luc giat doc (Recoil Vertical +) khi bat Custom Recoil |
+| **Mui ten Xuong (Down)** | Giam luc giat doc (Recoil Vertical -) khi bat Custom Recoil |
+| **Mui ten Trai / Phai** | Bu tru do giat ngang (Horizontal Recoil Bias Left/Right) |
+| **ALT + F9** | Ket noi lai thiet bi phan cung Hugo Device |
+| **ALT + F10** | Nap lai file cau hinh Hotkeys va Cloud Profile |
+| **F11** | Bat / Tat giao dien In-Game HUD Overlay |
+| **Shift + Esc** | Thoat nhanh khan cap va dong toan bo tien trinh ngam (Panic Exit) |
+
+---
+
+## 5. Buoc Khoi Dau Quan Trong - Bo Qua Windows Defender
 De tranh Windows Defender bao dong nham hoac chan file chay:
 1. Click chuot phai vao file **`Cho_Phep_Chay_HugoAI.bat`** va chon **Run as Administrator**.
 2. Script se tu dong:
@@ -20,7 +119,7 @@ De tranh Windows Defender bao dong nham hoac chan file chay:
 
 ---
 
-## 3. Thiet Bi Phan Cung (Hugo Device) - BAT BUOC
+## 6. Thiet Bi Phan Cung (Hugo Device) - BAT BUOC
 - **Lien he (Support) de mua Hugo Device:**
   - Chi phi tu 499 ca den 2.999 ca (da bao gom ban quyen su dung).
   - Telegram Support: [@Hugo997911](https://t.me/Hugo997911)
@@ -30,7 +129,7 @@ De tranh Windows Defender bao dong nham hoac chan file chay:
 
 ---
 
-## 4. Cach Kich Hoat Ban Quyen (License Activation)
+## 7. Cach Kich Hoat Ban Quyen (License Activation)
 Hugo AI ho tro 2 hinh thuc kich hoat tien loi:
 - **Cach 1 (Khuyen dung - Online Key):**
   - Mo ung dung `HugoAI.exe`, chuyen den the **License**.
@@ -42,23 +141,7 @@ Hugo AI ho tro 2 hinh thuc kich hoat tien loi:
 
 ---
 
-## 5. Bang Phim Tat Mac Dinh Trong Game (Default In-Game Hotkeys)
-
-| Phim Tat (Hotkey) | Chuc Nang (Function) |
-| :--- | :--- |
-| **F1** | Bat / Tat Auto Recoil (Ghim tam tu dong) |
-| **F2** | Chuyen doi sung nhanh / Bat tat Recoil phu |
-| **F3** | Bat / Tat Smart Auto Loot (Nhat do tu dong qua Vision AI) |
-| **F4** | Bat / Tat Prone Macro (Tu dong nam ban - Drop Shot khi say) |
-| **Mui ten Len (Up)** | Tang luc giat doc (Recoil Vertical +) truc tiep trong tran dau |
-| **Mui ten Xuong (Down)** | Giam luc giat doc (Recoil Vertical -) truc tiep trong tran dau |
-| **Mui ten Trai / Phai** | Bu tru do giat ngang (Horizontal Recoil Bias Left/Right) |
-| **F11** | Bat / Tat giao dien In-Game HUD Overlay |
-| **Shift + Esc** | Thoat nhanh khan cap va dong toan bo tien trinh ngam (Panic Exit) |
-
----
-
-## 6. Tinh Nang Noi Bat & Danh Sach Vu Khi Ho Tro
+## 8. Tinh Nang Noi Bat & Danh Sach Vu Khi Ho Tro
 
 ### Bang Tinh Nang Noi Bat (Key Features)
 
@@ -67,7 +150,7 @@ Hugo AI ho tro 2 hinh thuc kich hoat tien loi:
 | **AI Aim Alignment** | Tu dong nhan dien va bam muc tieu thoi gian thuc bang AI (GPU/CPU) toc do cao |
 | **Auto Recoil Engine** | Tu dong nhan dien sung, ong ngam, phu kien de ghim tam chuan xac tuyet doi |
 | **Smart Auto Loot** | Tu dong quet va nhat nhanh trang bi, dan duoc, phu kien sieu toc qua Vision AI |
-| **Prone Macro (Drop Shot)** | Ho tro macro tu dong nam ban linh hoat trong cac pha giao tranh |
+| **Prone Macro (Drop Shot)** | Ho tro macro tu dong nam ban linh hoat trong cac pha giao tranh (Mac dinh: OFF) |
 | **In-Game HUD Overlay** | Hien thi truc quan thong tin sung, phu kien va trang thai ngay tren man hinh game |
 | **Cloud Profile Sync** | Tu dong dong bo thong so ghim tam toi uu lien tuc tu he thong Cloud |
 | **Process Stealth Cloaking** | Engine chay ngam mang ten HugoCore.exe, an danh 100% truoc Task Manager va Anti-Cheat |
@@ -87,7 +170,7 @@ Hugo AI ho tro 2 hinh thuc kich hoat tien loi:
 
 ---
 
-## 7. Ha Tang Cloud 4 Lop Tu Dong Chuyen Vung (Multi-Worker Failover)
+## 9. Ha Tang Cloud 4 Lop Tu Dong Chuyen Vung (Multi-Worker Failover)
 He thong xac thuc Hugo AI tich hop co che failover da tang, tu dong chuyen server trong 0.5s neu 1 duong truyen bi loi:
 1. **Server 1 (Primary):** `https://hugo-ai-pubg-auth.team-idma-dev.workers.dev`
 2. **Server 2 (Custom Domain 1):** `https://hugoai.idma.dev` (Khong bao gio bi chan boi nha mang VN)
@@ -96,54 +179,16 @@ He thong xac thuc Hugo AI tich hop co che failover da tang, tu dong chuyen serve
 
 ---
 
-## 8. Huong Dan Khoi Chay & Cai Dat Game (Launch & Game Settings)
-1. **Quyen quan tri (Administrator):** Luon click chuot phai vao file `HugoAI.exe` va chon **Run as Administrator**.
-2. **Che do man hinh trong PUBG:**
-   - Cai dat game o che do **Borderless (Khong vien)** hoac **Windowed (Cua so)**.
-   - *Luu y quan trong:* Tuyet doi khong dung che do Fullscreen doc quyen vi AI Vision can chup man hinh de nhan dien vu khi.
-3. **Do phan giai ho tro:** Ho tro tot nhat tren man hinh **1920x1080 (Full HD)** va **2560x1440 (2K)**.
+## 10. Toi Uu Hieu Nang Do Hoa & Do Tre (NVIDIA & Windows Optimization)
+De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien vu khi sieu toc:
+- **Low Latency Mode:** Chon **Ultra** trong NVIDIA Control Panel.
+- **Power Management Mode:** Chon **Prefer maximum performance**.
+- **DirectX:** Chon **DirectX 11** hoac **DirectX 11 Enhanced** trong PUBG.
+- **V-Sync:** Chon **Disable (Tat)**.
 
 ---
 
-## 9. Toi Uu Hieu Nang Do Hoa & Do Tre (NVIDIA & Windows Optimization)
-De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien vu khi sieu toc, hay thiet lap rieng biet cho PUBG va Hugo AI theo huong dan sau:
-
-### A. Thiet Lap Rieng Cho Game PUBG (`TslGame.exe`)
-*Muc tieu:* Giup PUBG dat FPS cao va on dinh, loai bo do tre chuot (Input Lag), khong de PUBG chiem dung 100% GPU gay nghen pipeline chup man hinh cua AI.
-
-1. Mo **NVIDIA Control Panel** -> Vao muc **Manage 3D Settings** -> Chon tab **Program Settings**.
-2. Bam nut **Add** -> Chon `TslGame.exe` (PUBG):
-   - **Low Latency Mode:** Chon **Ultra** (Giai phap thay the cho NVIDIA Reflex, tu dong ha thap render queue xuong 0-1 frame, triet tieu do tre render giua game va AI capture).
-   - **Power Management Mode:** Chon **Prefer maximum performance** (Giu xung nhip GPU luon o muc cao nhat khi giao tranh).
-   - **Max Frame Rate:** Neu man hinh 144Hz hoac 240Hz, nen khoa FPS game o muc `Tan so quet - 3` (vi du 141 hoac 237 FPS) de GPU khong bi qua tai 100% full load, giu lai bang thong cho Tensor/CUDA cores cua AI.
-   - **Threaded Optimization:** Chon **On**.
-   - **Vertical Sync (V-Sync):** Chon **Off** (tat ca trong Nvidia Panel va trong game PUBG).
-3. Trong cai dat game PUBG:
-   - **Graphics -> DirectX Version:** Chon **DirectX 11** hoac **DirectX 11 Enhanced** (on dinh va chup man hinh nhanh nhat, tranh dung DirectX 12).
-   - **Graphics -> V-Sync:** Chon **Disable (Tat)**.
-
-### B. Thiet Lap Rieng Cho Hugo AI (`HugoAI.exe` & `HugoCore.exe`)
-*Muc tieu:* Uu tien tien trinh AI suy luan (inference) tuc thi, phan hoi nhan dien sung, phu kien trong 1-2 ms. Ten file da duoc chuan hoa co dinh, chi can add 1 lan duy nhat.
-
-1. Trong **NVIDIA Control Panel** -> **Manage 3D Settings** -> Tab **Program Settings**:
-2. Bam nut **Add** -> Chon file `HugoAI.exe` (va `HugoCore.exe`):
-   - **Power Management Mode:** Chon **Prefer maximum performance** (Bat buoc, giup GPU cap xung ngay khi AI thuc hien suy luan).
-   - **CUDA - GPUs:** Chon chinh xac card roi NVIDIA GeForce (tranh bi Windows nhan dien sang iGPU Onboard).
-   - **Low Latency Mode:** Chon **Ultra** hoac **On**.
-   - **Max Frame Rate:** Chon **Off** (khong gioi han cho AI).
-3. Trong **NVIDIA App / GeForce Experience**:
-   - **NEN TAT Game Filters** (bo loc mau overlay) vi cac filter mau se lam sai lech pixel nhan dien phu kien va lam giam FPS capture cua Vision AI.
-
-### C. Cai Dat Windows Graphics (Hardware-Accelerated GPU Scheduling - HAGS)
-1. Nhan phim `Windows + S` -> Tim kiem **Graphics Settings (Cai dat do hoa)**.
-2. Bat **Hardware-accelerated GPU scheduling (HAGS)** -> **On** (khoi dong lai may neu moi bat lan dau).
-3. Muc *Custom options for apps*:
-   - Bam **Browse** -> Chon file `HugoAI.exe`.
-   - Bam **Options** -> Chon **High Performance** (chi dinh card roi NVIDIA).
-
----
-
-## 10. Ho Tro & Lien He (Support)
+## 11. Ho Tro & Lien He (Support)
 - **Developer:** Hugo
 - **Telegram Support:** [@Hugo997911](https://t.me/Hugo997911)
 - **Copyright:** DEV by Hugo (telegram: @Hugo997911)
