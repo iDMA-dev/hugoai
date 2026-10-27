@@ -53,21 +53,41 @@ De he thong Recoil va AI Aim hoat dong voi quy dao ghim tam chuan xac tuyet doi,
 ---
 
 ### B. Cac Thong So Trong Hugo AI (AI Aim Assist & Target Tracking)
-1. **FOV Size (10 - 640 pixel):**
+1. **Sticky Aim & Sticky Aim Threshold (0 - 100 pixel):**
+   - **Sticky Aim (Bat / Tat):** Khoa chat mot muc tieu duy nhat dang ban cho toi khi bi ha guc, chong hien tuong tam nhay loan xa (crosshair hopping) khi co nhieu dich dung gan nhau.
+   - **Sticky Aim Threshold (Ban kinh dung sai: 0 - 100 px):**
+     + **So nho (0 - 20 px):** Nguong bam long, de doi muc tieu sang ke dich khac neu ke do chay sat tam chuot hon.
+     + **So lon (60 - 100 px):** Luc hut dinh cuc manh vao muc tieu hien tai, ke dich khac chay ngang qua che dan cung khong bi hut tam theo.
+     + **Khuyen dung:** `40 - 60 px` (can bang giua bam dinh va linh hoat doi muc tieu).
+2. **Prediction Method (Thuat toan du doan don dau):**
+   - **Hugo Zero-Lag Tracking (Khuyen dung - Cong nghe doc quyen Hugo):**
+     Triet tieu hoan toan do tre khung hinh nho he thong Feedforward dong toc va bo loc toc do cao Alpha-Beta.
+     + **Base Lookahead (0.0 - 6.0 Factor, Mac dinh: 2.90):** He so ban don dau do thoi gian dan bay trong PUBG.
+       * *Keo sang Trai (< 2.0 Factor):* Don ngan, ngam sat than dich (phu hop tam gan, dich di bo cham).
+       * *Keo sang Phai (> 3.5 Factor):* Don xa hon ve phia truoc huong dich chay (phu hop dich sprint o tam xa 70-150m hoac lai xe co chay ngang).
+       * *Khuyen dung:* `2.90 Factor`.
+     + **Tracking Feedforward (0.0 - 1.50 Gain, Mac dinh: 1.00):** Luc day bu tre van toc khung hinh. Truyen luc di chuot dong pha song song voi van toc dich ngay trong frame hien tai.
+       * *Keo sang Trai (< 0.70 Gain):* Chuot di chuyen em hon, it quan tinh.
+       * *Keo sang Phai (> 1.20 Gain):* Chuot bam dong toc cuc manh theo dich chay nuoc rut (khong de qua 1.30 de tranh bi vot tron khi dich phanh dot ngot).
+       * *Khuyen dung:* `1.00 Gain` (Ty le dong toc hoan hao 1:1).
+     + **Distance Adaptive Lead (Bat / Tat):** Tu dong tinh toan va dieu chinh he so don dau dua theo chieu cao Bounding Box cua dich tren man hinh (dich o xa nguoi nho -> tang he so len toi 2.2x; dich o gan nguoi to -> giam xuong 0.7x de tranh ban truot). Khuyen dung: **BAT (ON)**.
+   - **Kalman Filter (Thuat toan truyen thong):**
+     + **Kalman Lead Time (0.02 - 0.50 giay):** Thoi gian don dau co dinh theo bo loc Kalman (chi hien thi khi chuyen sang thuat toan Kalman Filter).
+3. **FOV Size (10 - 640 pixel):**
    - Ban kinh vung tron tim kiem muc tieu xung quanh tam man hinh.
    - **So nho (100 - 200 px):** Vung quét hep, chi ho tro khi tam da o rat gan muc tieu. Thich hop ban kin dao (legit), khong bi lo khi stream/quay clip.
    - **So lon (300 - 500 px):** Vung quet rong, giup bat va khoa muc tieu o xa tam ngam mot cach de dang.
-2. **Mouse Sensitivity (+/-) (0.01 - 1.00):**
+4. **Mouse Sensitivity (+/-) (0.01 - 1.00):**
    - Toc do va cuong do keo chuot cua AI khi bam duoi muc tieu.
    - **So nho (0.10 - 0.40):** Keo chuot nhe nhang, em ai, tao cam giac ngam ban hoan toan tu nhien.
    - **So lon (0.70 - 0.90):** Keo chuot cuc nhanh, tam dinh chat vao muc tieu ngay khi xuat hien.
 3. **Sticky Aim Threshold (0 - 100 pixel):**
    - Do dinh tam (nguong giu muc tieu). Khi tam da vao sat nguoi dich trong khoang cach nay, AI se tang cuong do bam giu de tam khong bi vang ra ngoai du dich co nhay hay doi huong.
-4. **Y Offset (Up/Down) (-150 den +150 pixel):**
+5. **Y Offset (Up/Down) (-150 den +150 pixel):**
    - Diem ngam muc tieu theo chieu doc (Dau / Co / Nguc):
    - **Keo thanh truot sang TRAI (Gia tri am, -):** Tam ngam duoc day **LEN CAO** (Uu tien Headshot / ban vao dau).
    - **Keo thanh truot sang PHAI (Gia tri duong, +):** Tam ngam duoc keo **XUONG DUOI** (Nguc / Than tren, an toan va de trung dan).
-5. **X Offset (Left/Right) (-150 den +150 pixel):**
+6. **X Offset (Left/Right) (-150 den +150 pixel):**
    - Diem ngam muc tieu theo chieu ngang:
    - **Keo sang TRAI (Gia tri am, -):** Tam ngam lech sang **BEN TRAI** muc tieu.
    - **Keo sang PHAI (Gia tri duong, +):** Tam ngam lech sang **BEN PHAI** muc tieu.
