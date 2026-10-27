@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.64 - Huong Dan Su Dung & Cai Dat
+# Hugo AI Suite v6.3.65 - Huong Dan Su Dung & Cai Dat
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM & Ho tro ghim tam PUBG
 
@@ -79,11 +79,11 @@ De dat do tre thap nhat (Ultra Low Latency), game muot ma va Hugo AI nhan dien v
    - **Graphics -> DirectX Version:** Chon **DirectX 11** hoac **DirectX 11 Enhanced** (on dinh va chup man hinh nhanh nhat, tranh dung DirectX 12).
    - **Graphics -> V-Sync:** Chon **Disable (Tat)**.
 
-### B. Thiet Lap Rieng Cho Hugo AI (`HugoAI.exe` & `hugo_recoil_worker.exe`)
+### B. Thiet Lap Rieng Cho Hugo AI (`HugoAI.exe` & `HugoCore.exe`)
 *Muc tieu:* Uu tien tien trinh AI suy luan (inference) tuc thi, phan hoi nhan dien sung, phu kien trong 1-2 ms.
 
 1. Trong **NVIDIA Control Panel** -> **Manage 3D Settings** -> Tab **Program Settings**:
-2. Bam nut **Add** -> Chon file `HugoAI.exe` (va `hugo_recoil_worker.exe`):
+2. Bam nut **Add** -> Chon file `HugoAI.exe` (va `HugoCore.exe`):
    - **Power Management Mode:** Chon **Prefer maximum performance** (Bat buoc, giup GPU cap xung ngay khi AI thuc hien suy luan).
    - **CUDA - GPUs:** Chon chinh xac card roi NVIDIA GeForce (tranh bi Windows nhan dien sang iGPU Onboard).
    - **Low Latency Mode:** Chon **Ultra** hoac **On**.
