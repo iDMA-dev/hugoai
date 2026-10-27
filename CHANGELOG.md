@@ -1,6 +1,27 @@
 # Hugo AI Suite - Nhat Ky Cap Nhat (Update History)
 > **DEV by Hugo (telegram: @Hugo997911)**
 
+## [v6.3.65] - 2026-10-27
+### 1. Multi-Worker High Availability & Auto-Failover
+- Implemented robust multi-endpoint failover architecture across all Hugo AI network layers (C# Client and Python Daemon).
+- Configured 4 active endpoints in strict priority order:
+  1. Primary: https://hugo-ai-pubg-auth.team-idma-dev.workers.dev
+  2. Custom Domain 1: https://hugoai.idma.dev (Anti-ISP block, fast Anycast routing)
+  3. Secondary Backup: https://hugo-ai-pubg-auth-backup.gafaba.workers.dev
+  4. Custom Domain 2: https://hugoai.gafaba.com (Multi-TLD domain redundancy)
+- Sub-second automatic fallback on HTTP 429 (Rate Limit), 5xx server errors, network timeouts, or ISP DNS blockades.
+- Self-healing promotion: active/healthy endpoint is automatically promoted to primary for subsequent requests.
+### 2. Anti-Censorship & Custom Domain Integration
+- Completely eliminates connection errors caused by Vietnamese ISP SNI/DNS filtering on default *.workers.dev domains.
+- Integrated dual custom domains (.idma.dev and .gafaba.com) with active SSL certificates and verified RSA license validation.
+### 3. Dynamic Configuration via hugo_auth.json
+- Added support for backup_worker_urls in hugo_auth.json across workspace, C# project, build artifacts, and client folders.
+- Allows updating and adding backup servers remotely without requiring client executable re-compilation.
+### 4. Process Cloaking & Authenticode Signature Verification
+- Validated standardized HugoAI.exe and background worker bin\\engine\\HugoCore.exe signatures.
+- Verified DigiCert RFC 3161 SHA256 Timestamp with Status: Valid across all binaries.
+- Provided automated 1-click installer Cho_Phep_Chay_HugoAI.bat with Windows 11 Tamper Protection fallback.
+---
 ## [v6.3.64] - 2026-10-27
 ### 1. Executable Standardization & NVIDIA Profile Persistence
 - Standardized client executable to fixed name `HugoAI.exe` across dev and client distribution packages.
@@ -32,12 +53,4 @@
 ### 3. Build & Packaging Hardening
 - Permanently eliminated weapons_custom.json from client distribution packages.
 - Ensured 100% clean client packages with zero pre-shipped licenses or local models.
----
-## [v6.3.54] - 2026-10-25
-### 1. Thong Bao Chi Tiet Cong Don Ngay Khi Gia Han Ban Quyen (Stacking Days)
-- **Cai tien:**
-  - Client C# (`HardwareAuthManager.cs`) tiep nhan va hien thi truc tiep thong bao chi tiet tu Cloudflare Auth Worker khi kich hoat / gia han Voucher Key.
-  - Hien thi ro rang so ngay duoc cong them vao goi hien tai va han dung moi (vi du: `Gia han thanh cong! Da cong them 30 ngay vao goi RECOIL. Han dung moi: YYYY-MM-DD`).
-- **Bao mat & Cloud-First:**
-  - Hoan thien kien truc Pure Cloud-First: Khong luu file `.lic` tren dia, chi ghi nho ma key de tu dong dien khi mo lai trinh kich hoat.
 ---
