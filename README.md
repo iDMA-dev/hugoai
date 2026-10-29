@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.70 - Huong Dan Su Dung & Cai Dat Toan Dien
+# Hugo AI Suite v6.3.75 - Huong Dan Su Dung & Cai Dat Toan Dien
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM, Auto Recoil & Ho tro PUBG Chuyen Nghiep
 
@@ -75,7 +75,7 @@ De he thong Recoil va AI Aim hoat dong voi quy dao ghim tam chuan xac tuyet doi,
      + **Kalman Lead Time (0.02 - 0.50 giay):** Thoi gian don dau co dinh theo bo loc Kalman (chi hien thi khi chuyen sang thuat toan Kalman Filter).
 3. **FOV Size (10 - 640 pixel):**
    - Ban kinh vung tron tim kiem muc tieu xung quanh tam man hinh.
-   - **So nho (100 - 200 px):** Vung quét hep, chi ho tro khi tam da o rat gan muc tieu. Thich hop ban kin dao (legit), khong bi lo khi stream/quay clip.
+   - **So nho (100 - 200 px):** Vung quet hep, chi ho tro khi tam da o rat gan muc tieu. Thich hop ban kin dao (legit), khong bi lo khi stream/quay clip.
    - **So lon (300 - 500 px):** Vung quet rong, giup bat va khoa muc tieu o xa tam ngam mot cach de dang.
 4. **Mouse Sensitivity (+/-) (0.01 - 1.00):**
    - Toc do va cuong do keo chuot cua AI khi bam duoi muc tieu.
