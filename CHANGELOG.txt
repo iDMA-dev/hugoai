@@ -1,18 +1,19 @@
-================================================================================
- HUGO AI SUITE - CHANGELOG & UPDATE HISTORY
- Version: 6.3.76
+--------------------------------------------------------------------------------
+ HUGO AI SUITE - NHAT KY CAP NHAT (CHANGELOG)
+ Version: v6.3.76
  DEV by Hugo (telegram: @Hugo997911)
-================================================================================
+--------------------------------------------------------------------------------
 
 ## [v6.3.76] - 2026-10-30
-### 1. Nang Cap Co Che Xac Thuc Ban Quyen Cloud Online 100% (Cloud-First License v2)
-- Chuyen doi sang kien truc Cloud-First License Token v2: Moi thao tac khoi chay ung dung va su dung tinh nang yeu cau ket noi Internet on dinh de dong bo thoi gian thuc voi he thong Cloud Server (4 cum may chu du phong tu dong).
-- Tich hop co che kiem tra Heartbeat dinh ky 30 giay tren ca C# Host va HugoCore Engine, dam bao dong bo trang thai ban quyen tuc thi.
-- Ho tro kich hoat va gia han doc lap tung phan he (Recoil / AI Aim) hoac Combo (HGCB) voi thoi han rieng biet cho tung module.
-### 2. Tach Biet Co Che Khoa Ma Key (Key Ban) Va Khoa Thiet Bi (Device Ban)
-- Cho phep thiet bi hop le nhap ma Key moi ngay lap tuc neu ma Key cu bi thu hoi hoac het han, khong gay khoa nham phan cung.
-- Tu dong an va rut gon chuoi ma RSA Token dai tren giao dien nguoi dung de de quan sat.
+### 1. Toi Uu Dong Bo Cau Hinh Cloud & Trai Nghiem Kich Hoat Nhanh
+- Toi uu toc do ket noi va dong bo thong so ghim tam truc tuyen qua cum 4 may chu Cloud toc do cao, tu dong chuyen luong du phong muot ma.
+- Ho tro kich hoat va gia han cong don thoi han linh hoat cho tung phan he doc lap (Hugo Recoil / Hugo AI Aim) hoac goi Combo.
+- Nang cap giao dien the License hien thi ma kich hoat gon gang, truc quan va de theo doi thoi han su dung.
+### 2. Toi Uu Do Muot Ghim Tam, Quet Balo & On Dinh FPS Trong Giao Tranh
+- Toi uu do on dinh khung hinh (Zero-Hook FPS Optimization) giup game van hanh muot ma 100% trong cac pha giao tranh dong nguoi.
+- Duy tri toc do quet balo (Tab) sieu toc (~180ms - 260ms) nhan dien chinh xac sung, scope, tay cam va dau nong.
+- Bo sung tai lieu huong dan cai dat va su dung theo tung buoc (Step-by-Step) truc quan tu luc tai ve den khi vao tran.
 
-================================================================================
+--------------------------------------------------------------------------------
  DEV by Hugo (telegram: @Hugo997911)
-================================================================================
+--------------------------------------------------------------------------------
