@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.75 - Huong Dan Su Dung & Cai Dat Toan Dien
+# Hugo AI Suite v6.3.76 - Huong Dan Su Dung & Cai Dat Toan Dien
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM, Auto Recoil & Ho tro PUBG Chuyen Nghiep
 
@@ -149,15 +149,14 @@ De tranh Windows Defender bao dong nham hoac chan file chay:
 
 ---
 
-## 7. Cach Kich Hoat Ban Quyen (License Activation)
-Hugo AI ho tro 2 hinh thuc kich hoat tien loi:
-- **Cach 1 (Khuyen dung - Online Key):**
+## 7. Cach Kich Hoat Ban Quyen (License Activation - Cloud Online 100%)
+Hugo AI su dung kien truc xac thuc Cloud Online 100% (yeu cau may tinh co ket noi Internet):
+- **Cach 1 (Khuyen dung - Online Key / Voucher):**
   - Mo ung dung `HugoAI.exe`, chuyen den the **License**.
   - Nhap ma kich hoat Online Key nhan tu Admin (@Hugo997911) va bam **Kich hoat Online**.
-  - He thong se tu dong xac thuc RSA qua Cloud, cap nhat thoi han va tu dong cong don ngay su dung.
-- **Cach 2 (Offline License):**
-  - Chep truc tiep file ban quyen `*.lic` nhan tu Admin vao **cung thu muc** voi file `HugoAI.exe`.
-  - Khi khoi chay, ung dung se tu dong nhan dien va kich hoat offline ngay lap tuc.
+  - He thong se tu dong xac thuc RSA Token v2 qua Cloud, cap nhat thoi han va tu dong cong don ngay su dung.
+- **Cach 2 (File License .lic):**
+  - Chep file ban quyen `*.lic` nhan tu Admin vao **cung thu muc** voi file `HugoAI.exe` (van yeu cau ket noi Internet de xac thuc truc tuyen voi Cloud Server).
 
 ---
 
