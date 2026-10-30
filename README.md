@@ -11,13 +11,15 @@
 2. **Giai nen phan mem:**
    - Tai goi **`HugoAI_v6.3.76.zip`** va giai nen ra mot thu muc rieng (vi du: `Desktop\HugoAI`). Khong chay truc tiep ben trong file nen `.zip`.
 3. **Cam thiet bi phan cung Hugo Device (BAT BUOC):**
-   - Cam thiet bi **Hugo Device** vao cong USB may tinh **truoc khi mo ung dung** (uu tien cong USB sau mainboard).
+   - Cam thiet bi **Hugo Device** vao cong USB may tinh **truoc khi mo ung dung**.
    - He thong se tu dong quet va nhan dien cong USB COM tuong thich (Auto COM Detection), dieu khien chuot 100% qua phan cung cach ly, 0% can thiep bo nho game.
    - **Lien he mua thiet bi Hugo Device:** Chi phi tu 499k - 2.999k (da bao gom ban quyen su dung) qua Telegram: [@Hugo997911](https://t.me/Hugo997911).
 
 ---
 
-## BUOC 2: Chay Cap Quyen Windows Defender (Chi Can Lam 1 Lan Dau)
+## BUOC 2: Chay Cap Quyen Windows Defender
+> **Luu y:** Sau moi lan cap nhat phien ban moi, giai nen xong ban can lam lai buoc nay 1 lan, nhung cac lan mo sau khong can thiet.
+
 De tranh Windows Defender bao nham hoac chan file chay:
 1. Mo thu muc vua giai nen, click chuot phai vao file **`Cho_Phep_Chay_HugoAI.bat`** va chon **Run as Administrator**.
 2. Script se tu dong them thu muc `HugoAI` vao danh sach loai tru (Exclusion) cua Windows Defender.
@@ -27,13 +29,10 @@ De tranh Windows Defender bao nham hoac chan file chay:
 
 ## BUOC 3: Khoi Chay Ung Dung (`HugoAI.exe`) & Kich Hoat Ban Quyen (License)
 1. Click chuot phai vao file **`HugoAI.exe`** -> chon **Run as Administrator**.
-2. Kich hoat ban quyen theo 1 trong 2 cach:
-   - **Cach 1 (Khuyen dung - Nhap Online Key):**
-     - Tai man hinh cho hoac chuyen den the **License** trong ung dung.
-     - Dan ma **Online Key** nhan tu Admin (`@Hugo997911`) vao o nhap ma va bam **Kich hoat Online**.
-     - He thong se tu dong kich hoat, cap nhat thoi han (hoac cong don ngay su dung) va mo nut **Vao Ung Dung**.
-   - **Cach 2 (File License `.lic`):**
-     - Chep file ban quyen `*.lic` nhan tu Admin vao **cung thu muc** voi file `HugoAI.exe`, sau do mo ung dung.
+2. Kich hoat ban quyen truc tuyen (Online Key):
+   - Tai man hinh cho hoac chuyen den the **License** trong ung dung.
+   - Dan ma **Online Key** nhan tu Admin (`@Hugo997911`) vao o nhap ma va bam **Kich hoat Online**.
+   - He thong se tu dong kich hoat, cap nhat thoi han (hoac cong don ngay su dung) va mo nut **Vao Ung Dung**.
 
 ---
 
@@ -42,7 +41,7 @@ De AI Vision nhan dien 100% vu khi/phu kien va quy dao ghim tam chuan xac tuyet 
 
 ### 4.1. Ngon Ngu Game & Che Do Man Hinh
 - **Ngon ngu trong game (Language):** Chuyen sang **TIENG ANH (ENGLISH)** (`Settings -> Gameplay -> Language -> Language Selection -> English`).
-- **Che do hien thi (Display Mode):** Chon **Borderless** (Khong vien) hoac **Windowed** (Cua so). **Tuyet doi khong dung Fullscreen doc quyen.**
+- **Che do hien thi (Display Mode):** Chon **Borderless** (Khong vien) hoac **Windowed** (Cua so). **Tuyet doi khong dung Fullscreen.**
 
 ### 4.2. Bang Thong So Chuot Chuan Trong Game (`Settings -> Controls -> Main`)
 
