@@ -1,54 +1,55 @@
-================================================================================
- HUGO AI SUITE v6.3.75 - HUONG DAN SU DUNG NHANH (QUICK START)
+--------------------------------------------------------------------------------
+ HUGO AI SUITE v6.3.81 - HUONG DAN CAI DAT & SU DUNG TUNG BUOC (QUICK START)
  DEV by Hugo (telegram: @Hugo997911)
-================================================================================
+--------------------------------------------------------------------------------
 
-1. YEU CAU HE THONG & LUU Y QUAN TRONG:
-   - Windows 10 / Windows 11 (64-bit).
-   - PHAN CUNG BAT BUOC: Phai co thiet bi Hugo Device cam vao cong USB may tinh.
-   - LUU Y QUAN TRONG: Hugo AI Suite hoat dong tot nhat o ngon ngu TIENG ANH (ENGLISH)
-     trong cai dat PUBG de AI Vision nhan dien chinh xac 100% sung va phu kien.
+BUOC 1: TAI VE, GIAI NEN & CAM THIET BI USB HUGO DEVICE
+   - He dieu hanh: Windows 10 / Windows 11 (64-bit), co ket noi Internet.
+   - Giai nen file HugoAI_v6.3.81.zip ra thu muc rieng (vi du Desktop\HugoAI).
+   - BAT BUOC: Cam thiet bi Hugo Device vao cong USB may tinh truoc khi mo app.
 
-2. CAI DAT CHUOT IN-GAME PUBG (BAT BUOC):
-   - Invert Mouse: Disable
-   - General Sensitivity: 30
-   - Vertical Sensitivity Multiplier: 1 (hoac 1.0)
-   - Aim Sensitivity: 30
-   - ADS Sensitivity: 30 (Cuc ky quan trong de quy dao ghim tam chuan)
-   - Universal Sensitivity for All Scopes: Enable
-   - Scoping Sensitivity: 30
-   - Display Mode: Borderless hoac Windowed (Khong dung Fullscreen)
+BUOC 2: CHAY CAP QUYEN WINDOWS DEFENDER
+   - Luu y: Sau moi lan cap nhat phien ban moi, giai nen xong ban can lam lai,
+     nhung lan sau khong can thiet.
+   - Click chuot phai vao file Cho_Phep_Chay_HugoAI.bat -> chon Run as Administrator
+     de them thu muc HugoAI vao danh sach loai tru cua Windows Defender.
 
-3. BANG PHIM TAT MAC DINH TRONG GAME:
+BUOC 3: MO PHAN MEM (HugoAI.exe) & KICH HOAT BAN QUYEN
+   - Click chuot phai vao HugoAI.exe -> chon Run as Administrator.
+   - Tai man hinh cho hoac the License, dan ma Online Key nhan tu Admin (@Hugo997911)
+     va bam Kich hoat Online -> bam Vao Ung Dung.
+
+BUOC 4: MO GAME PUBG & CAI DAT CHUAN TRONG GAME (BAT BUOC)
+   - Ngon ngu Game (Language): Chuyen sang TIENG ANH (ENGLISH).
+   - Display Mode: Borderless hoac Windowed (Tuyet doi khong dung Fullscreen).
+   - Thong so Chuot (Settings -> Controls -> Main):
+     + Invert Mouse: Disable
+     + General Sensitivity: 30
+     + Vertical Sensitivity Multiplier: 1 (hoac 1.0)
+     + Aim Sensitivity: 30
+     + ADS Sensitivity: 30 (Cuc ky quan trong de quy dao ghim tam chuan)
+     + Universal Sensitivity for All Scopes: Enable
+     + Scoping Sensitivity: 30
+
+BUOC 5: BANG PHIM TAT TRONG TRAN (IN-GAME HOTKEYS)
    - ALT + F12: Bat / Tat Hugo Recoil (Ghim tam tu dong)
-   - F1: Chuyen Che Do Recoil (AUTO / MANUAL / S-ONLY / LOCKED)
-   - F2: Chuyen doi Scope thu cong
-   - F3: Chuyen doi Tay cam (Grip) thu cong
-   - F4: Chuyen doi Dau nong (Muzzle) thu cong
+   - Tab: Tu dong quet balo nhan dien sung & phu kien khi mo balo
    - F5: Quet balo thu cong (Full Scan)
-   - Tab: Tu dong quet balo khi mo balo
    - Caps Lock: Bat / Tat Smart Auto Loot (Nhat do tu dong)
    - V: Prone Macro (Tu dong nam ban khi say, mac dinh: OFF)
    - Mui ten Len / Xuong: Tang / Giam luc giat doc (Recoil Vertical +/-) khi bat Custom
    - Mui ten Trai / Phai: Bu tru do giat ngang (Recoil Horizontal Bias)
-   - ALT + F9: Ket noi lai thiet bi Hugo Device
-   - ALT + F10: Nap lai file cau hinh Hotkeys
+   - ALT + F9 / ALT + F10: Ket noi lai Hugo Device / Nap lai Hotkeys
    - F11: Bat / Tat giao dien In-Game HUD Overlay
    - Shift + Esc: Thoat khan cap va dong toan bo tien trinh (Panic Exit)
 
-4. HUONG DAN CHINH THONG SO RECOIL & AI:
-   - Recoil Multiplier: So > 1.0 (ghim manh hon, dung khi dan bay len cao); So < 1.0 (ghim nhe lai, dung khi dan chui xuong dat).
-   - Prone Macro: Mac dinh la OFF de ban chu dong bat khi can.
-   - FOV Size: Vung tim dich quanh tam (So nho: 100-200 ban kin; So lon: 300-500 quet rong).
-   - Mouse Sensitivity: Toc do bam muc tieu (0.1 - 0.4: em muot; 0.7 - 0.9: bam nhanh).
-   - Y Offset: Keo sang TRAI (so am) -> ban len DAU; Keo sang PHAI (so duong) -> ban xuong NGUC/THAN.
+BUOC 6: HUONG DAN CHINH NHANH THONG SO RECOIL & AI
+   - Recoil Multiplier: So > 1.0 (ghim manh hon khi dan bay cao); So < 1.0 (ghim nhe lai).
+   - FOV Size: Vung tim dich quanh tam (100-200: ban kin; 300-500: quet rong).
+   - Mouse Sensitivity: Toc do bam muc tieu (0.15 - 0.40: em muot; 0.70 - 0.90: bam nhanh).
+   - Y Offset: Keo sang TRAI (so am) -> ban len DAU; Keo sang PHAI (so duong) -> NGUC/THAN.
    - X Offset: Keo sang TRAI (so am) -> lech TRAI; Keo sang PHAI (so duong) -> lech PHAI.
-   - Kalman Lead Time: Du doan don dau muc tieu chay ngang (So lon don dau xa hon).
 
-5. KICH HOAT BAN QUYEN:
-   - Cach 1: Nhap ma Online Key truc tiep tren the License cua app de tu dong gia han.
-   - Cach 2: Chep file *.lic vao cung thu muc voi file HugoAI.exe.
-
-================================================================================
+--------------------------------------------------------------------------------
  DEV by Hugo (telegram: @Hugo997911)
-================================================================================
+--------------------------------------------------------------------------------

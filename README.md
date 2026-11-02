@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.80 - Huong Dan Cai Dat & Su Dung Tung Buoc (Step-by-Step Guide)
+# Hugo AI Suite v6.3.81 - Huong Dan Cai Dat & Su Dung Tung Buoc (Step-by-Step Guide)
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM, Auto Recoil & Ho tro PUBG Chuyen Nghiep
 
@@ -9,7 +9,7 @@
    - **He dieu hanh:** Windows 10 / Windows 11 (64-bit), may tinh co ket noi Internet on dinh.
    - **Zero Dependency:** Ung dung da dong goi san toan bo thu vien .NET 8 va AI, khong can cai them moi truong phu.
 2. **Giai nen phan mem:**
-   - Tai goi **`HugoAI_v6.3.80.zip`** va giai nen ra mot thu muc rieng (vi du: `Desktop\HugoAI`). Khong chay truc tiep ben trong file nen `.zip`.
+   - Tai goi **`HugoAI_v6.3.81.zip`** va giai nen ra mot thu muc rieng (vi du: `Desktop\HugoAI`). Khong chay truc tiep ben trong file nen `.zip`.
 3. **Cam thiet bi phan cung Hugo Device (BAT BUOC):**
    - Cam thiet bi **Hugo Device** vao cong USB may tinh **truoc khi mo ung dung**.
    - He thong se tu dong quet va nhan dien cong USB COM tuong thich (Auto COM Detection), dieu khien chuot 100% qua phan cung cach ly, 0% can thiep bo nho game.
