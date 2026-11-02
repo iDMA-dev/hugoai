@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.76 - Huong Dan Cai Dat & Su Dung Tung Buoc (Step-by-Step Guide)
+# Hugo AI Suite v6.3.80 - Huong Dan Cai Dat & Su Dung Tung Buoc (Step-by-Step Guide)
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM, Auto Recoil & Ho tro PUBG Chuyen Nghiep
 
@@ -9,7 +9,7 @@
    - **He dieu hanh:** Windows 10 / Windows 11 (64-bit), may tinh co ket noi Internet on dinh.
    - **Zero Dependency:** Ung dung da dong goi san toan bo thu vien .NET 8 va AI, khong can cai them moi truong phu.
 2. **Giai nen phan mem:**
-   - Tai goi **`HugoAI_v6.3.76.zip`** va giai nen ra mot thu muc rieng (vi du: `Desktop\HugoAI`). Khong chay truc tiep ben trong file nen `.zip`.
+   - Tai goi **`HugoAI_v6.3.80.zip`** va giai nen ra mot thu muc rieng (vi du: `Desktop\HugoAI`). Khong chay truc tiep ben trong file nen `.zip`.
 3. **Cam thiet bi phan cung Hugo Device (BAT BUOC):**
    - Cam thiet bi **Hugo Device** vao cong USB may tinh **truoc khi mo ung dung**.
    - He thong se tu dong quet va nhan dien cong USB COM tuong thich (Auto COM Detection), dieu khien chuot 100% qua phan cung cach ly, 0% can thiep bo nho game.
@@ -64,10 +64,6 @@ Khi vao tran, ban chi can mo balo (**Phim Tab**) de AI tu dong nhan dien sung/ph
 | :--- | :--- |
 | **ALT + F12** | Bat / Tat Auto Recoil (Ghim tam tu dong) |
 | **Tab** | Tu dong quet nhan dien sung va phu kien khi mo balo |
-| **F1** | Chuyen Che Do Recoil (AUTO / MANUAL / S-ONLY / LOCKED) |
-| **F2** | Chuyen doi Scope thu cong |
-| **F3** | Chuyen doi Tay cam (Grip) thu cong |
-| **F4** | Chuyen doi Dau nong (Muzzle) thu cong |
 | **F5** | Quet balo thu cong (Force Full Scan) |
 | **Caps Lock** | Bat / Tat Smart Auto Loot (Nhat do tu dong qua Vision AI) |
 | **V** | Prone Macro (Tu dong nam ban - Drop Shot khi say, mac dinh: OFF) |

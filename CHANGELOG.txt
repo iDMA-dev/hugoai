@@ -1,18 +1,16 @@
 --------------------------------------------------------------------------------
  HUGO AI SUITE - NHAT KY CAP NHAT (CHANGELOG)
- Version: v6.3.76
+ Version: v6.3.80
  DEV by Hugo (telegram: @Hugo997911)
 --------------------------------------------------------------------------------
 
-## [v6.3.76] - 2026-10-30
-### 1. Toi Uu Dong Bo Cau Hinh Cloud & Trai Nghiem Kich Hoat Nhanh
-- Toi uu toc do ket noi va dong bo thong so ghim tam truc tuyen qua cum 4 may chu Cloud toc do cao, tu dong chuyen luong du phong muot ma.
-- Ho tro kich hoat va gia han cong don thoi han linh hoat cho tung phan he doc lap (Hugo Recoil / Hugo AI Aim) hoac goi Combo.
-- Nang cap giao dien the License hien thi ma kich hoat gon gang, truc quan va de theo doi thoi han su dung.
-### 2. Toi Uu Do Muot Ghim Tam, Quet Balo & On Dinh FPS Trong Giao Tranh
-- Toi uu do on dinh khung hinh (Zero-Hook FPS Optimization) giup game van hanh muot ma 100% trong cac pha giao tranh dong nguoi.
-- Duy tri toc do quet balo (Tab) sieu toc (~180ms - 260ms) nhan dien chinh xac sung, scope, tay cam va dau nong.
-- Bo sung tai lieu huong dan cai dat va su dung theo tung buoc (Step-by-Step) truc quan tu luc tai ve den khi vao tran.
+## [v6.3.80] - 2026-11-02
+### 1. Dong Bo Tu Dong Cau Hinh Ca Nhan (Cloud Profile Sync) Khi Cap Nhat Phien Ban Moi
+- Tu dong luu va khoi phuc toan bo thiet lap ca nhan (Phim tat Hotkeys, thong so Custom Recoil, vi tri & do mo HUD Overlay, cau hinh AI Aim Assist) theo ma thiet bi Hugo Device tren Cloud.
+- Khi tai va giai nen phien ban moi, ung dung tu dong nap lai 100% cau hinh da tuy chinh cua nguoi dung ma khong can cai dat lai tu dau.
+### 2. Nhan Dien Chinh Xac Khe Tay Cam (Supports Grip / N/A) & Toi Uu Bo Phim Tat
+- Phan loai chinh xac cac dong sung co khe lap tay cam (hien thi trang thai Grip: NONE/VERT/HALF/ANGLED/THUMB/LIGHT) va cac dong sung khong co khe tay cam trong game nhu AKM, Groza, M16A4, M249, MG3, DMR/SR (hien thi Grip: N/A, bo qua quet tay cam giup tang toc do quet balo).
+- Tinh gon he thong phim tat In-Game: Loai bo cac phim chuyen phu kien thu cong (F1-F4) de tranh bam nham trong giao tranh, dong bo 100% qua AI Vision khi mo balo (Phim Tab hoac F5).
 
 --------------------------------------------------------------------------------
  DEV by Hugo (telegram: @Hugo997911)
