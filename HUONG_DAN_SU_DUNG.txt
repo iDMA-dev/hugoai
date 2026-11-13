@@ -1,11 +1,11 @@
 --------------------------------------------------------------------------------
- HUGO AI SUITE v6.3.81 - HUONG DAN CAI DAT & SU DUNG TUNG BUOC (QUICK START)
+ HUGO AI SUITE v6.3.86 - HUONG DAN CAI DAT & SU DUNG TUNG BUOC (QUICK START)
  DEV by Hugo (telegram: @Hugo997911)
 --------------------------------------------------------------------------------
 
 BUOC 1: TAI VE, GIAI NEN & CAM THIET BI USB HUGO DEVICE
    - He dieu hanh: Windows 10 / Windows 11 (64-bit), co ket noi Internet.
-   - Giai nen file HugoAI_v6.3.81.zip ra thu muc rieng (vi du Desktop\HugoAI).
+   - Giai nen file HugoAI_v6.3.86.zip ra thu muc rieng (vi du Desktop\HugoAI).
    - BAT BUOC: Cam thiet bi Hugo Device vao cong USB may tinh truoc khi mo app.
 
 BUOC 2: CHAY CAP QUYEN WINDOWS DEFENDER
