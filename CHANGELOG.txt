@@ -1,10 +1,10 @@
 --------------------------------------------------------------------------------
  HUGO AI SUITE - NHAT KY CAP NHAT (CHANGELOG)
- Version: v6.3.86
+ Version: v6.3.88
  DEV by Hugo (telegram: @Hugo997911)
 --------------------------------------------------------------------------------
 
-## [v6.3.86] - Cap Nhat Hieu Nang & Do On Dinh He Thong
+## [v6.3.88] - Cap Nhat Hieu Nang & Do On Dinh He Thong
 - Toi uu hoa hieu nang xu ly AI Vision va do muot quy dao ghim tam Auto Recoil.
 - Nang cap do on dinh ket noi phan cung USB Hugo Device va dong bo cau hinh Cloud.
 - Cai thien giao dien hien thi In-Game HUD Overlay va trai nghiem su dung tong the.
