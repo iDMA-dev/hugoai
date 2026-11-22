@@ -1,11 +1,11 @@
 --------------------------------------------------------------------------------
- HUGO AI SUITE v6.3.88 - HUONG DAN CAI DAT & SU DUNG TUNG BUOC (QUICK START)
+ HUGO AI SUITE v6.3.89 - HUONG DAN CAI DAT & SU DUNG TUNG BUOC (QUICK START)
  DEV by Hugo (telegram: @Hugo997911)
 --------------------------------------------------------------------------------
 
 BUOC 1: TAI VE, GIAI NEN & CAM THIET BI USB HUGO DEVICE
    - He dieu hanh: Windows 10 / Windows 11 (64-bit), co ket noi Internet.
-   - Giai nen file HugoAI_v6.3.88.zip ra thu muc rieng (vi du Desktop\HugoAI).
+   - Giai nen file HugoAI_v6.3.89.zip ra thu muc rieng (vi du Desktop\HugoAI).
    - BAT BUOC: Cam thiet bi Hugo Device vao cong USB may tinh truoc khi mo app.
 
 BUOC 2: CHAY CAP QUYEN WINDOWS DEFENDER
@@ -49,6 +49,17 @@ BUOC 6: HUONG DAN CHINH NHANH THONG SO RECOIL & AI
    - Mouse Sensitivity: Toc do bam muc tieu (0.15 - 0.40: em muot; 0.70 - 0.90: bam nhanh).
    - Y Offset: Keo sang TRAI (so am) -> ban len DAU; Keo sang PHAI (so duong) -> NGUC/THAN.
    - X Offset: Keo sang TRAI (so am) -> lech TRAI; Keo sang PHAI (so duong) -> lech PHAI.
+
+BUOC 7: CHON CONG NGHE GPU (DIRECTML vs NVIDIA CUDA) & BANG DIEM NGOT (SWEET SPOT)
+   - PUBG de DirectX 11 / DirectX 11 Enhanced + Borderless la muot nhat (0% xung dot voi AI).
+   - Bang khuyen nghi chon Engine & Max AI FPS (Aim Assist -> Advanced Expert Settings):
+     + Card AMD Radeon 4GB (RX 570/580 4G)       -> Chon: DirectML         | Max AI FPS: 60 FPS
+     + Card AMD Radeon 8GB+ (RX 6600/6700/7800)  -> Chon: DirectML         | Max AI FPS: 85 - 105 FPS
+     + Card Intel Arc (A580/A750/B580)           -> Chon: DirectML         | Max AI FPS: 60 - 85 FPS
+     + Card NVIDIA cu GTX 1050Ti / 1060 / 1070   -> Chon: DirectML         | Max AI FPS: 60 FPS
+     + Card NVIDIA 4GB (GTX 1650 / RTX 3050 4G)  -> Chon: DirectML / CUDA  | Max AI FPS: 60 FPS
+     + Card NVIDIA 6GB (GTX 1660S / RTX 2060 6G) -> Chon: NVIDIA CUDA      | Max AI FPS: 80 - 90 FPS
+     + Card NVIDIA RTX 8GB+ (RTX 3060/4060/5060+)-> Chon: NVIDIA CUDA      | Max AI FPS: 105 - 120 FPS
 
 --------------------------------------------------------------------------------
  DEV by Hugo (telegram: @Hugo997911)
