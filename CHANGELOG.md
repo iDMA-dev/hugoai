@@ -1,21 +1,31 @@
-# Hugo AI Suite - Nhat Ky Cap Nhat (Update History)
-> **DEV by Hugo (telegram: @Hugo997911)**
+# Hugo AI Suite - Nhật Ký Cập Nhật (Changelog)
+> **Phiên bản hiện tại:** `v6.3.89`  
+> **Tác giả / Hỗ trợ:** DEV by Hugo (telegram: [@Hugo997911](https://t.me/Hugo997911))
+
+---
 
 ## [v6.3.89] - 2026-11-22
-### 1. Nang Cap He Thong Tang Toc GPU Kep: NVIDIA CUDA / Tensor Core Boost & Smart DirectML Discrete Lock
-- Bo sung che do tang toc phan cung **NVIDIA CUDA / Tensor Core Boost** (ho tro day du GTX 16xx, RTX 20xx, RTX 30xx, RTX 40xx va RTX 50xx Blackwell) song song voi **DirectML**: Cai dat ngam chi 1 lan duy nhat vao may, tu dong giu nguyen qua tat ca cac ban cap nhat `HugoAI` ve sau ma khong lam tang dung luong tai App (~98 MB).
-- Ung dung cong nghe **Hardware CUDA Graph** va bo nho **Zero-Allocation Pinned IoBinding**: Gom toan bo 239 lop mang AI thanh 1 lenh GPU duy nhat, giam do tre suy luan tuc thi (dat ~550 - 720 FPS o khung FOV tieu chuan va nhanh hon 43% o khung 640px) dong thoi chong tranh chap 3D Queue khi PUBG chiem 99% GPU tren man 2K.
-- Toi uu hoa **DirectML Native** cho Card **AMD Radeon / Intel Arc & Laptop Gaming**: Tu dong quet DXGI va khoa cung vao Card do hoa roi co VRAM lon nhat (loai bo 100% loi chay nham tren card tich hop iGPU onboard cua CPU Ryzen 7000/9000 hoac Intel) kem co che Pre-Flight Kernel Warmup chong khug khung hinh dau tien.
-- Tich hop thanh trang thai & chuyen doi nhanh **1-Click GPU Engine Banner** ngay tren dau tab `Aim Assist` va trong `Settings -> Model Settings`.
-- Bo sung huy hieu trang thai **AI AIM: ON / OFF** hien thi co dinh, sieu gon ngay tren thanh **In-Game HUD Overlay** (**Xanh la** khi `ON`, **Do** khi `OFF`, dong bo tuc thi voi phim tat va cong tac giao dien) va toi uu co che luu giu trang thai `Aim Assist` ben vung 100% qua moi lan chuyen doi GPU Engine hoac khoi dong lai.
+### 1. Nâng Cấp Hệ Thống Tăng Tốc GPU Kép: NVIDIA CUDA / Tensor Core Boost & Smart DirectML Discrete Lock
+- Bổ sung chế độ tăng tốc phần cứng **NVIDIA CUDA / Tensor Core Boost** (hỗ trợ đầy đủ GTX 16xx, RTX 20xx, RTX 30xx, RTX 40xx và RTX 50xx Blackwell) song song với **DirectML**: Cài đặt ngầm chỉ 1 lần duy nhất ngay trên giao diện, tự động giữ nguyên qua tất cả các bản cập nhật `HugoAI` về sau mà không làm tăng dung lượng tải App (~98 MB).
+- Ứng dụng công nghệ **Hardware CUDA Graph** và bộ nhớ **Zero-Allocation Pinned IoBinding**: Gom toàn bộ 239 lớp mạng AI thành 1 lệnh GPU duy nhất, giảm tối đa độ trễ suy luận (nhanh hơn tới 46% ở khung 640px) đồng thời chống tranh chấp hàng đợi 3D khi PUBG chiếm 99% GPU trên màn hình 2K.
+- Tối ưu hóa **DirectML Native** cho Card **AMD Radeon / Intel Arc & Laptop Gaming**: Tự động quét và khóa cứng vào Card đồ họa rời có VRAM lớn nhất (loại bỏ 100% lỗi chạy nhầm trên card tích hợp onboard iGPU) kèm cơ chế nạp nóng nhân GPU chống khựng khung hình đầu tiên.
+- Tích hợp cơ chế **Auto Hardware Guard (3 mức bảo vệ 4GB / 6GB / 8GB+)** bảo vệ các dòng card đời cũ không bao giờ bị quá tải hoặc tràn VRAM, kèm thanh chuyển đổi nhanh **1-Click GPU Engine** ngay đầu thẻ `Aim Assist`.
+- Bổ sung huy hiệu trạng thái **`AI AIM: ON / OFF`** hiển thị cố định, siêu gọn ngay bên phải thanh **In-Game HUD Overlay** (**Xanh lá** khi `ON`, **Đỏ** khi `OFF`, đồng bộ tức thì với phím tắt & công tắc giao diện) và khắc phục lỗi hiện đúp thông báo khi thu nhỏ cửa sổ cùng độ bền lưu cấu hình `Aim Assist` 100%.
 ---
 ## [v6.3.88] - 2026-11-21
-### 1. Cap Nhat Nhanh Tai Cho (1-Click In-Place Update) & Nang Cap Key Combo Linh Hoat
-- Bo sung tinh nang **1-Click Update** ngay tren thanh Topbar va muc `About`: Tu dong tai ban moi va cap nhat truc tiep ngay tai thu muc dang su dung, giu nguyen 100% cau hinh ca nhan, Windows Security Exclusion va NVIDIA Profile, tu dong don sach file tam sau khi khoi dong lai.
-- Toi gian va nang cap tab **License Center** (cung nut loi tat `+ KEY / COMBO` tren man hinh chinh): Hop nhat ve 1 o nhap Key thong minh duy nhat cho phep kich hoat moi, nang cap len goi **Combo VIP (`HGCB-...`)** hoac cong don ngay dung bat cu luc nao ngay ca khi ban quyen hien tai chua het han.
-- Tu dong dong bo ngam ban quyen Cloud tuc thi khi mo tab hoac khi duoc gia han/nang cap tu xa ma khong can bam nut thu cong hay khoi dong lai ung dung.
+### 1. Cập Nhật Nhanh Tại Chỗ (1-Click In-Place Update) & Nâng Cấp Key Combo Linh Hoạt
+- Bổ sung tính năng **1-Click Update** ngay trên thanh Topbar và mục `About`: Tự động tải bản mới và cập nhật trực tiếp ngay tại thư mục đang sử dụng, giữ nguyên 100% cấu hình cá nhân, quyền loại trừ Windows Security và NVIDIA Profile, tự động dọn sạch file tạm sau khi khởi động lại.
+- Tối giản và nâng cấp thẻ **License Center** (cùng nút lối tắt `+ KEY / COMBO` trên màn hình chính): Hợp nhất về 1 ô nhập Key thông minh duy nhất cho phép kích hoạt mới, nâng cấp lên gói **Combo VIP (`HGCB-...`)** hoặc cộng dồn ngày dùng bất cứ lúc nào ngay cả khi bản quyền hiện tại chưa hết hạn.
+- Tự động đồng bộ ngầm bản quyền Cloud tức thì khi mở tab hoặc khi được gia hạn/nâng cấp từ xa mà không cần bấm nút thủ công hay khởi động lại ứng dụng.
 ## [v6.3.86] - 2026-11-13
-### 1. Toi Uu Hieu Nang GPU Khi Giu Ngam & Luu Cau Hinh Tu Dong Tuc Thi
-- Toi uu hoa hieu nang xu ly GPU DirectML khi kich hoat AI Aim + Auto Recoil (tu dong toi uu kich thuoc khung quet ngam theo vung FOV ma van giu 100% thanh truot FOV Size tu do tung pixel, giam dang ke muc tai GPU va nhiet do).
-- Luu va khoi phuc chinh xac 100% trang thai cac tuy chon (`Aim Assist`, `FOV`, `FOV Style`, `UI TopMost`, `StreamGuard`, `EMA Smoothening`, `Hotkeys`, `Sliders`) ngay khi thay doi va sau khi khoi dong lai ung dung.
-- Bo sung nut **RESET CUSTOM** tren the Recoil va co che nhan dien xoa `weapons_custom.json` thong minh de tra ngay ve thong so Cloud chuan mac dinh ma khong bi tai lai ban cu.
+### 1. Tối Ưu Hiệu Năng GPU Khi Giữ Ngắm & Lưu Cấu Hình Tự Động Tức Thì
+- Tối ưu hóa hiệu năng xử lý GPU DirectML khi kích hoạt AI Aim + Auto Recoil (tự động tối ưu kích thước khung quét ngầm theo vùng FOV mà vẫn giữ 100% thanh trượt FOV Size tự do từng pixel, giảm đáng kể mức tải GPU và nhiệt độ).
+- Lưu và khôi phục chính xác 100% trạng thái các tùy chọn (`Aim Assist`, `FOV`, `FOV Style`, `UI TopMost`, `StreamGuard`, `EMA Smoothening`, `Hotkeys`, `Sliders`) ngay khi thay đổi và sau khi khởi động lại ứng dụng.
+- Bổ sung nút **RESET CUSTOM** trên thẻ Recoil và cơ chế nhận diện xóa `weapons_custom.json` thông minh để trả ngay về thông số Cloud chuẩn mặc định mà không bị tải lại bản cũ.
+
+---
+
+### Hướng Dẫn Cập Nhật Nhanh
+1. Bấm nút **CẬP NHẬT** ngay trên thanh Topbar của ứng dụng (hoặc tải gói **`HugoAI_v6.3.89.zip`** bên dưới và giải nén ra thư mục trên máy tính).
+2. Cắm thiết bị **Hugo Device** vào cổng USB, mở **`HugoAI.exe`** để sử dụng ngay.
+- **Hỗ trợ trực tuyến 24/7:** DEV by Hugo (telegram: `@Hugo997911`)
