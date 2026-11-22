@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.88 - Huong Dan Cai Dat & Su Dung Tung Buoc (Step-by-Step Guide)
+# Hugo AI Suite v6.3.89 - Huong Dan Cai Dat & Su Dung Tung Buoc (Step-by-Step Guide)
 > **Ban quyen / Author:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyen muc:** AI AIM, Auto Recoil & Ho tro PUBG Chuyen Nghiep
 
@@ -9,7 +9,7 @@
    - **He dieu hanh:** Windows 10 / Windows 11 (64-bit), may tinh co ket noi Internet on dinh.
    - **Zero Dependency:** Ung dung da dong goi san toan bo thu vien .NET 8 va AI, khong can cai them moi truong phu.
 2. **Giai nen phan mem:**
-   - Tai goi **`HugoAI_v6.3.88.zip`** va giai nen ra mot thu muc rieng (vi du: `Desktop\HugoAI`). Khong chay truc tiep ben trong file nen `.zip`.
+   - Tai goi **`HugoAI_v6.3.89.zip`** va giai nen ra mot thu muc rieng (vi du: `Desktop\HugoAI`). Khong chay truc tiep ben trong file nen `.zip`.
 3. **Cam thiet bi phan cung Hugo Device (BAT BUOC):**
    - Cam thiet bi **Hugo Device** vao cong USB may tinh **truoc khi mo ung dung**.
    - He thong se tu dong quet va nhan dien cong USB COM tuong thich (Auto COM Detection), dieu khien chuot 100% qua phan cung cach ly, 0% can thiep bo nho game.
@@ -113,11 +113,32 @@ Khi vao tran, ban chi can mo balo (**Phim Tab**) de AI tu dong nhan dien sung/ph
 
 ---
 
-## BUOC 7: Toi Uu Hieu Nang Do Hoa & Lien He Ho Tro (Support)
+## BUOC 7: Chon Cong Nghe GPU (DirectML vs NVIDIA CUDA) & Bang Thong So "Diem Ngot" (Sweet Spot)
+
+### 7.1. Huong Dan Chon Che Do Tang Toc GPU (`Aim Assist` -> Thanh GPU Engine tren cung)
+- **DirectML (Mac dinh - Chay ngay 0MB tai them):** Tuong thich 100% moi dong card **AMD Radeon**, **Intel Arc** va **NVIDIA**. He thong tu dong quet va khoa cung vao Card do hoa roi (khong bao gio chay nham tren card onboard iGPU).
+- **NVIDIA CUDA / Tensor Core Boost (Tuy chon cai 1 lan duy nhat):** Danh rieng cho card **NVIDIA tu GTX 1650 / RTX 20-30-40-50 series tro len**. Bam nut **`CAI DAT CUDA BOOST`** ngay tren dau the `Aim Assist` de App tu tai ngam bo thu vien chinh hang Microsoft & NVIDIA (chi cai 1 lan duy nhat, giu nguyen vinh vien qua moi ban cap nhat `HugoAI` ve sau).
+- **Co che Auto-Guard bao ve Card cu tu dong:** He thong tu nhan dien dung luong VRAM (`4GB / 6GB / 8GB+`) de gioi han bo nho dem va tran FPS an toan, dam bao khong bao gio tran VRAM hay gay giat lag PUBG.
+- **Khong xung dot DirectX trong game:** Viec de PUBG o **`DirectX 11` hoac `DirectX 11 Enhanced` + `Borderless`** la thiet lap muot nhat va hoat dong doc lap 100%, khong he xung dot voi `DirectML (DX12)` hay `NVIDIA CUDA` cua HugoAI.
+
+### 7.2. Bang Thong So "Diem Ngot" (Sweet Spot) Toi Uu Theo Hang Card & Cau Hinh
+> **Nguyen tac vang:** `Max AI FPS` (trong *Aim Assist -> Advanced Expert Settings*) nen dat bang khoang **70% - 85% FPS trung binh cua PUBG** trong giao tranh (khong can dat cao hon FPS cua game).
+
+| Hang Card & Cau Hinh GPU | Nen Chon Engine Nao? | Muc `Max AI FPS` Toi Uu | Ghi Chu & Ly Do Thuc Chien |
+| :--- | :---: | :---: | :--- |
+| **AMD Radeon (4GB VRAM)**<br>*(RX 570, RX 580 4GB, RX 6500 XT)* | **DirectML** *(Chuan so 1 cho AMD)* | **`60 FPS`** *(Mac dinh)* | Nhe card, giu on dinh khung hinh PUBG, khong lo tran VRAM. |
+| **AMD Radeon (8GB - 16GB+ VRAM)**<br>*(RX 580 8G, RX 6600/6700 XT, RX 7600/7800 XT)* | **DirectML** *(Chuan so 1 cho AMD)* | **`85 - 105 FPS`** | Kien truc RDNA cua AMD toi uu cuc manh cho DirectML tren Windows, bam tam rat muot. |
+| **Intel Arc GPU**<br>*(Arc A380, A580, A750, A770, B580)* | **DirectML** | **`60 - 85 FPS`** | Tuong thich native tot nhat cho dong card Intel Arc. |
+| **NVIDIA Doi Cu GTX 10-Series**<br>*(GTX 1050 Ti, GTX 1060, GTX 1070, GTX 1080)* | **DirectML** *(Auto Eco Guard)* | **`60 FPS`** | Dong 10-series khong co nhan Tensor Core; dung DirectML nhe may va on dinh nhat. |
+| **NVIDIA 4GB VRAM (Turing / RTX Laptop)**<br>*(GTX 1650 4GB, RTX 2050 / RTX 3050 4GB)* | **DirectML** hoac **NVIDIA CUDA** *(Eco 4GB)* | **`60 FPS`** | Auto-Guard tu bop tran VRAM 320MB & <= 65 FPS de nhuong VRAM cho PUBG. |
+| **NVIDIA 6GB VRAM Tam Trung**<br>*(GTX 1660 Super/Ti, RTX 2060 6GB, RTX 3060 Laptop 6GB)* | **NVIDIA CUDA Boost** *(Khuyen dung)* | **`80 - 90 FPS`** | Giam do tre bam muc tieu ~35% so voi DirectML ma van giu an toan VRAM 6GB. |
+| **NVIDIA RTX 8GB - 24GB+ Doi Moi**<br>*(RTX 3060 12G, RTX 3070, RTX 4060/4070, **RTX 5060 Ti / 5070 / 5080**)* | **NVIDIA CUDA Boost** *(Toi uu nhat)* | **`105 - 120 FPS`** | **Diem ngot dinh cao!** Phat huy 100% nhan Tensor Core + CUDA Graph (~1.4 - 2.2ms/frame), say xe va muc tieu di chuyen ngang cuc dinh tren man 144Hz - 240Hz. |
+
+### 7.3. Toi Uu NVIDIA Control Panel & Lien He Ho Tro (Support)
 - **Toi uu NVIDIA & PUBG:**
   - **Low Latency Mode:** Chon **Ultra** trong NVIDIA Control Panel.
   - **Power Management Mode:** Chon **Prefer maximum performance**.
-  - **DirectX:** Chon **DirectX 11** hoac **DirectX 11 Enhanced**; **V-Sync:** **Disable**.
+  - **DirectX trong PUBG:** Chon **DirectX 11** hoac **DirectX 11 Enhanced**; **Display Mode:** **Borderless**; **V-Sync:** **Disable**.
 - **Thong tin lien he & Ho tro chinh thuc:**
   - **Developer:** Hugo
   - **Telegram Support:** [@Hugo997911](https://t.me/Hugo997911)
