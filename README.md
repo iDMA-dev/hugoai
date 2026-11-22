@@ -136,11 +136,28 @@ Khi vào trận, bạn chỉ cần mở balo (**Phím Tab**) để AI tự độ
 | **NVIDIA 6GB VRAM Tầm Trung**<br>*(GTX 1660 Super/Ti, RTX 2060 6GB, RTX 3060 Laptop 6GB)* | **NVIDIA CUDA Boost** *(Khuyên dùng)* | **`80 - 90 FPS`** | Giảm độ trễ bám mục tiêu ~35% so với DirectML mà vẫn giữ an toàn VRAM 6GB. |
 | **NVIDIA RTX 8GB - 24GB+ Đời Mới**<br>*(RTX 3060 12G, RTX 3070, RTX 4060/4070, **RTX 5060 Ti / 5070 / 5080**)* | **NVIDIA CUDA Boost** *(Tối ưu nhất)* | **`105 - 120 FPS`** | **Điểm ngọt đỉnh cao!** Phát huy 100% nhân Tensor Core + CUDA Graph (~1.4 - 2.2ms/frame), sấy xe và mục tiêu di chuyển ngang cực dính trên màn 144Hz - 240Hz. |
 
-### 7.3. Tối Ưu NVIDIA Control Panel & Liên Hệ Hỗ Trợ (Support)
-- **Tối ưu NVIDIA & PUBG:**
-  - **Low Latency Mode:** Chọn **Ultra** trong NVIDIA Control Panel.
-  - **Power Management Mode:** Chọn **Prefer maximum performance**.
-  - **DirectX trong PUBG:** Chọn **DirectX 11** hoặc **DirectX 11 Enhanced**; **Display Mode:** **Borderless**; **V-Sync:** **Disable**.
+### 7.3. Tối Ưu NVIDIA App & Windows Graphics Cho `HugoAI` và `PUBG` (Thay Thế NVIDIA Control Panel Cũ)
+> Do **NVIDIA Control Panel** cũ đã ngừng phát triển và chuyển hẳn sang **NVIDIA App**, bạn thực hiện 2 bước sau cho cả **2 ứng dụng: `HugoAI.exe` và `PUBG (TslGame.exe)`** để bung 100% hiệu năng GPU và triệt tiêu hoàn toàn hiện tượng tụt xung / giật khung hình:
+
+#### Bước 1: Thêm ứng dụng & bật Max Performance trong NVIDIA App
+1. Mở **NVIDIA App** -> chọn mục **Graphics** (thanh bên trái) -> chuyển sang tab **Program Settings**.
+2. Bấm biểu tượng dấu 3 chấm dọc **`⋮`** (cạnh nút làm mới / thanh lọc) -> chọn **Add a program** -> lần lượt trỏ tới và thêm cả 2 file:
+   - **`HugoAI.exe`** *(nằm trong thư mục giải nén `HugoAI` của bạn)*.
+   - **`TslGame.exe`** *(file chạy chính của PUBG tại `...\Steam\steamapps\common\PUBG\TslGame\Binaries\Win64\TslGame.exe`)*.
+3. Lần lượt chọn từng ứng dụng vừa thêm (`HugoAI.exe` và `TslGame.exe`), kéo xuống phần **Driver Settings** bên dưới và chỉnh các thông số sau:
+   - **Power Management Mode:** chọn **Prefer Maximum Performance** *(quan trọng nhất — giữ xung nhịp Card rời RTX/GTX luôn chạy tối đa ổn định, không tự hạ xung tiết kiệm điện gây trễ AI hoặc tụt FPS giao tranh)*.
+   - **CUDA - GPUs:** chọn **All** *(hoặc tích chọn trực tiếp Card rời **NVIDIA GeForce RTX / GTX** của bạn)*.
+   - **OpenGL Rendering GPU:** chọn đúng tên Card rời **NVIDIA GeForce RTX / GTX** của bạn.
+   - **Texture Filtering - Quality:** chọn **High Performance** *(nếu cần tốc độ xử lý / FPS tối đa)* hoặc **High Quality** *(nếu cần độ nét hình ảnh tối đa)*.
+   - *(Mẹo thêm: Nếu muốn bung tối đa giới hạn điện năng của cả card, vào mục **System -> Performance** ở thanh bên trái -> kéo thanh **Power Maximum (%)** lên mức cao nhất).*
+
+#### Bước 2: Ép Windows ưu tiên tối đa tài nguyên GPU cho `HugoAI` & `PUBG`
+1. Nhấn tổ hợp phím **`Win + I`** mở **Settings -> System -> Display -> Graphics**.
+2. Bấm **Add desktop app** -> lần lượt chọn thêm cả 2 file **`HugoAI.exe`** và **`TslGame.exe`** (PUBG).
+3. Bấm mũi tên mở rộng từng ứng dụng vừa thêm -> ở dòng **GPU preference**, chọn **High Performance (NVIDIA GeForce RTX / GTX...)**.
+
+#### Thiết Lập Bổ Trợ Trong Game PUBG & Liên Hệ Hỗ Trợ (Support)
+- **Thiết lập đồ họa trong PUBG:** Chọn **DirectX 11** hoặc **DirectX 11 Enhanced**; **Display Mode:** **Borderless**; **V-Sync:** **Disable**.
 - **Thông tin liên hệ & Hỗ trợ chính thức:**
   - **Developer:** Hugo
   - **Telegram Support:** [@Hugo997911](https://t.me/Hugo997911)
