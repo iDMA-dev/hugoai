@@ -1,65 +1,67 @@
---------------------------------------------------------------------------------
- HUGO AI SUITE v6.3.89 - HUONG DAN CAI DAT & SU DUNG TUNG BUOC (QUICK START)
+﻿--------------------------------------------------------------------------------
+ HUGO AI SUITE v6.3.89 - HƯỚNG DẪN CÀI ĐẶT & SỬ DỤNG TỪNG BƯỚC (QUICK START)
  DEV by Hugo (telegram: @Hugo997911)
 --------------------------------------------------------------------------------
 
-BUOC 1: TAI VE, GIAI NEN & CAM THIET BI USB HUGO DEVICE
-   - He dieu hanh: Windows 10 / Windows 11 (64-bit), co ket noi Internet.
-   - Giai nen file HugoAI_v6.3.89.zip ra thu muc rieng (vi du Desktop\HugoAI).
-   - BAT BUOC: Cam thiet bi Hugo Device vao cong USB may tinh truoc khi mo app.
+BƯỚC 1: TẢI VỀ, GIẢI NÉN & CẮM THIẾT BỊ USB HUGO DEVICE
+   - Hệ điều hành: Windows 10 / Windows 11 (64-bit), có kết nối Internet.
+   - Giải nén file HugoAI_v6.3.89.zip ra thư mục riêng (ví dụ Desktop\HugoAI).
+   - BẮT BUỘC: Cắm thiết bị Hugo Device vào cổng USB máy tính trước khi mở App.
 
-BUOC 2: CHAY CAP QUYEN WINDOWS DEFENDER
-   - Luu y: Sau moi lan cap nhat phien ban moi, giai nen xong ban can lam lai,
-     nhung lan sau khong can thiet.
-   - Click chuot phai vao file Cho_Phep_Chay_HugoAI.bat -> chon Run as Administrator
-     de them thu muc HugoAI vao danh sach loai tru cua Windows Defender.
+BƯỚC 2: CHẠY CẤP QUYỀN WINDOWS DEFENDER
+   - Lưu ý: Chỉ cần chạy 1 lần đầu tiên khi giải nén ra thư mục mới; các lần mở sau
+     hoặc khi bấm nút CẬP NHẬT trên thanh Topbar thì không cần làm lại.
+   - Click chuột phải vào file Cho_Phep_Chay_HugoAI.bat -> chọn Run as administrator
+     để thêm thư mục HugoAI vào danh sách loại trừ của Windows Defender.
 
-BUOC 3: MO PHAN MEM (HugoAI.exe) & KICH HOAT BAN QUYEN
-   - Click chuot phai vao HugoAI.exe -> chon Run as Administrator.
-   - Tai man hinh cho hoac the License, dan ma Online Key nhan tu Admin (@Hugo997911)
-     va bam Kich hoat Online -> bam Vao Ung Dung.
+BƯỚC 3: MỞ PHẦN MỀM (HugoAI.exe) & KÍCH HOẠT BẢN QUYỀN
+   - Mở HugoAI.exe (ứng dụng tự động chạy quyền Administrator).
+   - Tại màn hình chờ hoặc thẻ License, dán mã Online Key nhận từ Admin (@Hugo997911)
+     và bấm Kích hoạt để vào ứng dụng ngay.
 
-BUOC 4: MO GAME PUBG & CAI DAT CHUAN TRONG GAME (BAT BUOC)
-   - Ngon ngu Game (Language): Chuyen sang TIENG ANH (ENGLISH).
-   - Display Mode: Borderless hoac Windowed (Tuyet doi khong dung Fullscreen).
-   - Thong so Chuot (Settings -> Controls -> Main):
+BƯỚC 4: MỞ GAME PUBG & CÀI ĐẶT CHUẨN TRONG GAME (BẮT BUỘC)
+   - Ngôn ngữ Game (Language): Chuyển sang TIẾNG ANH (ENGLISH).
+   - Display Mode: Borderless hoặc Windowed (Tuyệt đối không dùng Fullscreen).
+   - Thông số Chuột chuẩn trong PUBG (Settings -> Controls -> Main):
      + Invert Mouse: Disable
      + General Sensitivity: 30
-     + Vertical Sensitivity Multiplier: 1 (hoac 1.0)
+     + Vertical Sensitivity Multiplier: 1 (hoặc 1.0)
      + Aim Sensitivity: 30
-     + ADS Sensitivity: 30 (Cuc ky quan trong de quy dao ghim tam chuan)
+     + ADS Sensitivity: 30 (Cực kỳ quan trọng để quỹ đạo ghim tâm chuẩn)
      + Universal Sensitivity for All Scopes: Enable
      + Scoping Sensitivity: 30
 
-BUOC 5: BANG PHIM TAT TRONG TRAN (IN-GAME HOTKEYS)
-   - ALT + F12: Bat / Tat Hugo Recoil (Ghim tam tu dong)
-   - Tab: Tu dong quet balo nhan dien sung & phu kien khi mo balo
-   - F5: Quet balo thu cong (Full Scan)
-   - Caps Lock: Bat / Tat Smart Auto Loot (Nhat do tu dong)
-   - V: Prone Macro (Tu dong nam ban khi say, mac dinh: OFF)
-   - Mui ten Len / Xuong: Tang / Giam luc giat doc (Recoil Vertical +/-) khi bat Custom
-   - Mui ten Trai / Phai: Bu tru do giat ngang (Recoil Horizontal Bias)
-   - ALT + F9 / ALT + F10: Ket noi lai Hugo Device / Nap lai Hotkeys
-   - F11: Bat / Tat giao dien In-Game HUD Overlay
-   - Shift + Esc: Thoat khan cap va dong toan bo tien trinh (Panic Exit)
+BƯỚC 5: BẢNG PHÍM TẮT TRONG TRẬN (IN-GAME HOTKEYS)
+   - ALT + F12: Bật / Tắt Hugo Recoil (Ghim tâm tự động)
+   - Chuột Hông Trước (XButton2 / Mouse 5): Bật / Tắt nhanh AI AIM (báo Xanh lá / Đỏ trên HUD)
+   - HOME: Ẩn / Hiện nhanh cửa sổ giao diện HugoAI xuống khay hệ thống (System Tray)
+   - Tab: Tự động quét balo nhận diện súng & phụ kiện khi mở balo
+   - F5: Quét balo thủ công (Full Scan)
+   - Caps Lock: Bật / Tắt Smart Auto Loot (Nhặt đồ tự động)
+   - V: Prone Macro (Tự động nằm bắn khi sấy, mặc định: OFF)
+   - Mũi tên Lên / Xuống: Tăng / Giảm lực ghim dọc (Recoil Vertical +/-) khi bật Custom
+   - Mũi tên Trái / Phải: Bù trừ độ giật ngang (Recoil Horizontal Bias)
+   - ALT + F9 / ALT + F10: Kết nối lại Hugo Device / Nạp lại Hotkeys
+   - F11: Bật / Tắt thanh giao diện In-Game HUD Overlay
+   - Shift + Esc: Thoát khẩn cấp và đóng toàn bộ tiến trình (Panic Exit)
 
-BUOC 6: HUONG DAN CHINH NHANH THONG SO RECOIL & AI
-   - Recoil Multiplier: So > 1.0 (ghim manh hon khi dan bay cao); So < 1.0 (ghim nhe lai).
-   - FOV Size: Vung tim dich quanh tam (100-200: ban kin; 300-500: quet rong).
-   - Mouse Sensitivity: Toc do bam muc tieu (0.15 - 0.40: em muot; 0.70 - 0.90: bam nhanh).
-   - Y Offset: Keo sang TRAI (so am) -> ban len DAU; Keo sang PHAI (so duong) -> NGUC/THAN.
-   - X Offset: Keo sang TRAI (so am) -> lech TRAI; Keo sang PHAI (so duong) -> lech PHAI.
+BƯỚC 6: HƯỚNG DẪN CHỈNH NHANH THÔNG SỐ RECOIL & AI
+   - Recoil Multiplier: Số > 1.0 (ghim mạnh hơn khi đạn bay cao); Số < 1.0 (ghim nhẹ lại).
+   - FOV Size: Vùng tìm địch quanh tâm (100-200: bắn kín; 300-500: quét rộng).
+   - Mouse Sensitivity: Tốc độ bám mục tiêu (0.15 - 0.40: êm mượt; 0.70 - 0.90: bám nhanh).
+   - Y Offset: Kéo sang TRÁI (số âm) -> bắn lên ĐẦU; Kéo sang PHẢI (số dương) -> NGỰC/THÂN.
+   - X Offset: Kéo sang TRÁI (số âm) -> lệch TRÁI; Kéo sang PHẢI (số dương) -> lệch PHẢI.
 
-BUOC 7: CHON CONG NGHE GPU (DIRECTML vs NVIDIA CUDA) & BANG DIEM NGOT (SWEET SPOT)
-   - PUBG de DirectX 11 / DirectX 11 Enhanced + Borderless la muot nhat (0% xung dot voi AI).
-   - Bang khuyen nghi chon Engine & Max AI FPS (Aim Assist -> Advanced Expert Settings):
-     + Card AMD Radeon 4GB (RX 570/580 4G)       -> Chon: DirectML         | Max AI FPS: 60 FPS
-     + Card AMD Radeon 8GB+ (RX 6600/6700/7800)  -> Chon: DirectML         | Max AI FPS: 85 - 105 FPS
-     + Card Intel Arc (A580/A750/B580)           -> Chon: DirectML         | Max AI FPS: 60 - 85 FPS
-     + Card NVIDIA cu GTX 1050Ti / 1060 / 1070   -> Chon: DirectML         | Max AI FPS: 60 FPS
-     + Card NVIDIA 4GB (GTX 1650 / RTX 3050 4G)  -> Chon: DirectML / CUDA  | Max AI FPS: 60 FPS
-     + Card NVIDIA 6GB (GTX 1660S / RTX 2060 6G) -> Chon: NVIDIA CUDA      | Max AI FPS: 80 - 90 FPS
-     + Card NVIDIA RTX 8GB+ (RTX 3060/4060/5060+)-> Chon: NVIDIA CUDA      | Max AI FPS: 105 - 120 FPS
+BƯỚC 7: CHỌN CÔNG NGHỆ GPU (DIRECTML vs NVIDIA CUDA) & BẢNG ĐIỂM NGỌT (SWEET SPOT)
+   - PUBG để DirectX 11 / DirectX 11 Enhanced + Borderless là mượt nhất (0% xung đột với AI).
+   - Bảng khuyến nghị chọn Engine & Max AI FPS (Aim Assist -> Advanced Expert Settings):
+     + Card AMD Radeon 4GB (RX 570/580 4G)        -> Chọn: DirectML         | Max AI FPS: 60 FPS
+     + Card AMD Radeon 8GB+ (RX 6600/6700/7800)   -> Chọn: DirectML         | Max AI FPS: 85 - 105 FPS
+     + Card Intel Arc (A580/A750/B580)            -> Chọn: DirectML         | Max AI FPS: 60 - 85 FPS
+     + Card NVIDIA cũ GTX 1050Ti / 1060 / 1070    -> Chọn: DirectML         | Max AI FPS: 60 FPS
+     + Card NVIDIA 4GB (GTX 1650 / RTX 3050 4G)   -> Chọn: DirectML / CUDA  | Max AI FPS: 60 FPS
+     + Card NVIDIA 6GB (GTX 1660S / RTX 2060 6G)  -> Chọn: NVIDIA CUDA      | Max AI FPS: 80 - 90 FPS
+     + Card NVIDIA RTX 8GB+ (RTX 3060/4060/5060+) -> Chọn: NVIDIA CUDA      | Max AI FPS: 105 - 120 FPS
 
 --------------------------------------------------------------------------------
  DEV by Hugo (telegram: @Hugo997911)
