@@ -1,4 +1,4 @@
-# Hugo AI Suite v6.3.90 - Hướng Dẫn Cài Đặt & Sử Dụng Từng Bước (Step-by-Step Guide)
+# Hugo AI Suite v6.3.91 - Hướng Dẫn Cài Đặt & Sử Dụng Từng Bước (Step-by-Step Guide)
 > **Bản quyền / Tác giả:** DEV by Hugo (telegram: @Hugo997911)  
 > **Chuyên mục:** AI AIM, Auto Recoil & Hỗ Trợ PUBG Chuyên Nghiệp
 
@@ -9,7 +9,7 @@
    - **Hệ điều hành:** Windows 10 / Windows 11 (64-bit), máy tính có kết nối Internet ổn định.
    - **Zero Dependency:** Ứng dụng đã đóng gói sẵn toàn bộ thư viện `.NET 8` và lõi AI, mở lên chạy ngay không cần cài thêm phần mềm phụ.
 2. **Giải nén phần mềm:**
-   - Tải gói **`HugoAI_v6.3.90.zip`** và giải nén ra một thư mục riêng (ví dụ: `Desktop\HugoAI`). **Không chạy trực tiếp bên trong file nén `.zip`.**
+   - Tải gói **`HugoAI_v6.3.91.zip`** và giải nén ra một thư mục riêng (ví dụ: `Desktop\HugoAI`). **Không chạy trực tiếp bên trong file nén `.zip`.**
 3. **Cắm thiết bị phần cứng Hugo Device (BẮT BUỘC):**
    - Cắm thiết bị **Hugo Device** vào cổng USB máy tính **trước khi mở ứng dụng**.
    - Hệ thống tự động quét và nhận diện cổng USB COM tương thích (Auto COM Detection), điều khiển chuột 100% qua phần cứng cách ly độc lập, **0% can thiep bộ nhớ game**.
