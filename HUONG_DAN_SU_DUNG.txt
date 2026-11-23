@@ -1,11 +1,11 @@
 ﻿--------------------------------------------------------------------------------
- HUGO AI SUITE v6.3.89 - HƯỚNG DẪN CÀI ĐẶT & SỬ DỤNG TỪNG BƯỚC (QUICK START)
+ HUGO AI SUITE v6.3.91 - HƯỚNG DẪN CÀI ĐẶT & SỬ DỤNG TỪNG BƯỚC (QUICK START)
  DEV by Hugo (telegram: @Hugo997911)
 --------------------------------------------------------------------------------
 
 BƯỚC 1: TẢI VỀ, GIẢI NÉN & CẮM THIẾT BỊ USB HUGO DEVICE
    - Hệ điều hành: Windows 10 / Windows 11 (64-bit), có kết nối Internet.
-   - Giải nén file HugoAI_v6.3.89.zip ra thư mục riêng (ví dụ Desktop\HugoAI).
+   - Giải nén file HugoAI_v6.3.91.zip ra thư mục riêng (ví dụ Desktop\HugoAI).
    - BẮT BUỘC: Cắm thiết bị Hugo Device vào cổng USB máy tính trước khi mở App.
 
 BƯỚC 2: CHẠY CẤP QUYỀN WINDOWS DEFENDER
@@ -62,6 +62,24 @@ BƯỚC 7: CHỌN CÔNG NGHỆ GPU (DIRECTML vs NVIDIA CUDA) & BẢNG ĐIỂM NG
      + Card NVIDIA 4GB (GTX 1650 / RTX 3050 4G)   -> Chọn: DirectML / CUDA  | Max AI FPS: 60 FPS
      + Card NVIDIA 6GB (GTX 1660S / RTX 2060 6G)  -> Chọn: NVIDIA CUDA      | Max AI FPS: 80 - 90 FPS
      + Card NVIDIA RTX 8GB+ (RTX 3060/4060/5060+) -> Chọn: NVIDIA CUDA      | Max AI FPS: 105 - 120 FPS
+
+BƯỚC 8: TỐI ƯU NVIDIA APP & WINDOWS GRAPHICS CHO HUGOAI VÀ PUBG (THAY NVIDIA CONTROL PANEL CŨ)
+   * Bước 8.1 - Thêm ứng dụng & bật Max Performance trong NVIDIA App:
+     1. Mở NVIDIA App -> chọn mục Graphics (thanh bên trái) -> chuyển sang tab Program Settings.
+     2. Bấm biểu tượng dấu 3 chấm dọc (⋮) -> chọn Add a program -> lần lượt trỏ tới và thêm cả 2 file:
+        - HugoAI.exe (trong thư mục giải nén HugoAI)
+        - TslGame.exe (file chạy PUBG tại ...\Steam\steamapps\common\PUBG\TslGame\Binaries\Win64\TslGame.exe)
+     3. Chọn từng ứng dụng vừa thêm, kéo xuống phần Driver Settings bên dưới và chỉnh:
+        - Power Management Mode: chọn Prefer Maximum Performance (quan trọng nhất - giữ xung GPU tối đa)
+        - CUDA - GPUs: chọn All (hoặc tích chọn trực tiếp Card rời NVIDIA GeForce RTX/GTX của bạn)
+        - OpenGL Rendering GPU: chọn đúng Card rời NVIDIA GeForce RTX/GTX của bạn
+        - Texture Filtering - Quality: chọn High Performance (tối ưu FPS) hoặc High Quality (tối ưu độ nét)
+     (Mẹo thêm: Vào System -> Performance ở thanh bên trái -> kéo thanh Power Maximum (%) lên mức cao nhất).
+
+   * Bước 8.2 - Ép Windows ưu tiên tối đa tài nguyên GPU cho HugoAI & PUBG:
+     1. Nhấn Win + I mở Settings -> System -> Display -> Graphics.
+     2. Bấm Add desktop app -> lần lượt chọn thêm cả 2 file HugoAI.exe và TslGame.exe (PUBG).
+     3. Bấm mũi tên mở rộng từng ứng dụng -> ở dòng GPU preference, chọn High Performance (NVIDIA GeForce...).
 
 --------------------------------------------------------------------------------
  DEV by Hugo (telegram: @Hugo997911)
