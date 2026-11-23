@@ -1,13 +1,15 @@
 ﻿--------------------------------------------------------------------------------
  HUGO AI SUITE - NHẬT KÝ CẬP NHẬT (CHANGELOG)
- Phiên bản: v6.3.89
+ Phiên bản: v6.3.91
  DEV by Hugo (telegram: @Hugo997911)
 --------------------------------------------------------------------------------
 
-## [v6.3.89] - Cap Nhat Hieu Nang & Do On Dinh He Thong
-- Toi uu hoa hieu nang xu ly AI Vision va do muot quy dao ghim tam Auto Recoil.
-- Nang cap do on dinh ket noi phan cung USB Hugo Device va dong bo cau hinh Cloud.
-- Cai thien giao dien hien thi In-Game HUD Overlay va trai nghiem su dung tong the.
+## [v6.3.91] - 2026-11-23
+### 1. Giao Diện Luxury Gold Mới, Cập Nhật An Toàn & Trạng Thái AI Thực Tế
+- Ra mắt diện mạo **Luxury Gold** sang trọng, độ tương phản cao và dịu mắt khi sử dụng lâu dài trên toàn bộ cửa sổ chính, bảng điều khiển **Auto Recoil**, **AI Aim Assist**, **License Center**, **In-Game HUD Overlay** và vòng tâm **FOV**.
+- Nâng cấp trình **1-Click Update** tích hợp kiểm định toàn vẹn gói cài đặt `SHA-256` trước khi giải nén và cổng thông báo cập nhật phiên bản bắt buộc thông minh, đảm bảo mọi thiết bị luôn đồng bộ cấu hình chuẩn xác nhất mà không làm gián đoạn cài đặt cá nhân.
+- Hoàn thiện hiển thị trạng thái sẵn sàng thực tế của mô hình AI/GPU ngay trên thanh **Sidebar** (phân biệt rõ đang khởi tạo, sẵn sàng hoạt động hoặc cảnh báo lỗi nạp nhân GPU khi chạy gói **Combo VIP**).
+- Nâng cấp đồng bộ **Cloud Profile** đa máy tính (Máy A <-> Máy B): Luôn ưu tiên nạp cấu hình mới nhất trên Cloud không phụ thuộc độ lệch giờ đồng hồ Windows, loại bỏ hoàn toàn lỗi cấu hình cũ ghi đè ngược lên Cloud và tự động đồng bộ ngầm ngay khi tinh chỉnh lực kéo súng trong game.
 
 --------------------------------------------------------------------------------
  DEV by Hugo (telegram: @Hugo997911)
